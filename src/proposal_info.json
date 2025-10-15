@@ -33,11 +33,9 @@
       "description": [
         "10 horas de levantamiento de información",
         "Definir casos de uso prioritarios",
-        "Definir el proceso comercial - pipe line",
-        "Establecer categorías de clientes y oportunidades",
+        "Validar el alcance funcional del CRM/ERP y acordar datos maestros (pacientes, profesionales, recursos e inventarios). ",
         "Definir indicadores que se visualizarán en el tablero",
-        "Determinar momentos en los que debe intervenir un asesor",
-        "Acordar los canales de atención (WhatsApp, Facebook e Instagram)"
+        "Definir las necesidades de interoperabilidad con WhatsApp y Google Calendar"
       ],
       "timeline": "2 semanas",
       "endDate": "20–24 de Octubre",
@@ -63,14 +61,14 @@
     {
       "step": "03",
       "title": "Desarrollo lógica de negocio",
-      "intro": "Con los acuerdos previos, parametrizamos las reglas de negocio del CRM. Esta actividad la haremos en conjunto con el equipo de Casa Blanca.",
+      "intro": "Con los acuerdos previos, parametrizamos las reglas de negocio del CRM. Esta actividad la haremos en conjunto con el equipo de EsVital.",
       "description": [
         "Diseño funcional y técnico del CRM/ERP",
         "Modelado de historias clínicas e inventarios (lotes/vencimientos)",
         "Reglas de agenda por profesional y recurso",
         "Prototipo navegable del CRM (embudo, ficha de paciente, mapa de tratamientos)",
         "Permisos de acceso",
-        "Construccion de un tablero con las métricas definidas (conversaciones, oportunidades, conversiones y seguimiento por canal)"
+        "Construccion de un tablero con las métricas definidas"
       ],
       "timeline": "3 semanas",
       "endDate": "3 - 21 de Noviembre",
@@ -154,7 +152,7 @@
         "Implementación de CRM para la gestión de clientes y oportunidades de venta.",
         "Levantamiento del proceso y parametrización del sistema",
         "Capacitación y contextualizacion sobre AI y Meta.",
-        "Capacitación a usuarios finales sober el uso de Fail Fast - AI CRM & ERP"
+        "Capacitación a usuarios finales sobre el uso de Fail Fast - AI CRM & ERP"
       ],
       "buttonText": "Contactar",
       "highlighted": true
