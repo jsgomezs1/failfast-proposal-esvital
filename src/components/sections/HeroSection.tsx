@@ -71,7 +71,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ sectionsRef, index }) => {
                 Ventas con{" "}
                 <span className="relative inline-block">
                   <span className="gradient-text text-5xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl">
-                    Agentes de IA
+                    Agentes de AI
                   </span>
                   <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 via-primary-light/20 to-transparent blur-2xl -z-10" />
                 </span>

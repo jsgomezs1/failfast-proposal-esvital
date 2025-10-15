@@ -139,10 +139,8 @@ const PricingSection: React.FC<PricingSectionProps> = ({
               </div>
             );
           })}
-        </div>;
-        {
-          /* Commercial Conditions Button */
-        }
+        </div>
+        {/* Commercial Conditions Button */}
         <div className="flex justify-center mt-5">
           <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
             <DialogTrigger asChild>
@@ -177,7 +175,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({
               </div>
             </DialogContent>
           </Dialog>
-        </div>;
+        </div>
       </div>
     </section>
   );
