@@ -1,0 +1,200 @@
+{
+  "client_name": "Casablanca",
+  "client_logo": "@/assets/casablanca.png",
+  "client_description": "Casablanca representa una generación de empresas establecidas en el mercado que internalizaron que **solo aquellos que adopten la IA** serán los que sobrevivirán a esta nueva era. Con más de **43 años en el mercado** y presencia en **13 países**, Casablanca entiende que combinar su profundo conocimiento del mercado con la optimización de procesos a través de la inteligencia artificial es la clave para liderar el futuro.",
+  "objective": {
+    "description": "Implementar Fail Fast como el núcleo de un **CRM inteligente** que conecta clientes, productos y oportunidades, con un agente de IA que vende por:",
+    "platforms": [
+      {
+        "name": "WhatsApp",
+        "icon": "MessageCircle",
+        "color": "green"
+      },
+      {
+        "name": "Facebook",
+        "icon": "Facebook",
+        "color": "blue"
+      },
+      {
+        "name": "Instagram",
+        "icon": "Instagram",
+        "color": "pink"
+      }
+    ],
+    "key_capabilities": [
+      "Recomienda productos y clasifica clientes",
+      "Registra conversaciones y mantiene un historial completo",
+      "Incluye **intervención humana** en cierres de ventas",
+      "Genera un Dashboard para la toma de **decisiones estratégicas**"
+    ]
+  },
+  "project_phases": [
+    {
+      "step": "01",
+      "title": "Preparación y levantamiento de información",
+      "intro": "Realizaremos sesiones de trabajo con el equipo de Casa Blanca para acordar las reglas de negocio del CRM y del agente:",
+      "description": [
+        "20 horas de levantamiento de información",
+        "Definir casos de uso prioritarios",
+        "Definir el proceso comercial - pipe line",
+        "Establecer categorías de clientes y oportunidades",
+        "Definir indicadores que se visualizarán en el tablero",
+        "Determinar momentos en los que debe intervenir un asesor",
+        "Acordar los canales de atención (WhatsApp, Facebook e Instagram)"
+      ],
+      "timeline": "2 semanas",
+      "endDate": "31 de octubre",
+      "icon": "Users",
+      "colorTheme": "blue"
+    },
+    {
+      "step": "02",
+      "title": "Contextualización en IA y Meta",
+      "intro": "Brindaremos al equipo una visión práctica sobre el uso de Inteligencia Artificial y agentes aplicados al proceso comercial:",
+      "description": [
+        "5 horas de capacitación",
+        "Introducción a conceptos clave de IA y agentes conversacionales",
+        "Enfoque en la automatización de procesos comerciales",
+        "Uso estratégico de herramientas Meta (WhatsApp, Facebook e Instagram)",
+        "Buenas prácticas para la interacción entre agente y asesor humano"
+      ],
+      "timeline": "1 semana",
+      "endDate": "21 de Noviembre",
+      "icon": "Rocket",
+      "colorTheme": "orange"
+    },
+    {
+      "step": "03",
+      "title": "Desarrollo lógica de negocio",
+      "intro": "Con los acuerdos previos, parametrizamos las reglas de negocio del CRM. Esta actividad la haremos en conjunto con el equipo de Casa Blanca.",
+      "description": [
+        "Flujo de creacion de clientes y oportunidades",
+        "Oportunidades de venta",
+        "Tareas, citas, documentos y notas",
+        "Estructuras de migracion de Productos y distribuidores",
+        "Permisos de acceso",
+        "Construccion de un tablero con las métricas definidas (conversaciones, oportunidades, conversiones y seguimiento por canal)"
+      ],
+      "timeline": "2 semanas",
+      "endDate": "14 de noviembre",
+      "icon": "Database",
+      "colorTheme": "purple"
+    },
+    {
+      "step": "04",
+      "title": "Capacitaciones Fail Fast - AI CRM",
+      "intro": "Realizaremos sesiones de entrenamiento con el equipo de Casa Blanca para garantizar una adopción efectiva del CRM y del agente de ventas:",
+      "description": [
+        "10 horas de capacitación",
+        "Capacitaciones prácticas con el equipo comercial",
+        "Entrenamiento en flujos reales de atención y venta en WhatsApp, Facebook e Instagram",
+        "Uso de la segmentación de clientes y lectura de indicadores clave",
+        "Definición clara de los momentos en los que debe intervenir un asesor humano",
+        "Simulaciones de conversaciones con el agente para reforzar la experiencia",
+        "Sesiones de preguntas y respuestas para resolver dudas reales"
+      ],
+      "timeline": "1 semanas",
+      "endDate": "28 de noviembre",
+      "icon": "GraduationCap",
+      "colorTheme": "teal"
+    },
+    {
+      "step": "05",
+      "title": "Lanzamiento e iteracion - Agente de ventas (memoria y contexto)",
+      "intro": "Pondremos en marcha el agente que atiende por WhatsApp, iterando el contexto con el objetivo de optimizar su desempeño ",
+      "description": [
+        "Será capaz de recordar conversaciones por cliente",
+        "Recuperar el contexto en cada contacto y ofrecer recomendaciones alineadas con el portafolio.",
+        "Implementaremos las reglas acordadas para segmentar clientes y asignarles beneficios, con alertas y traspaso a asesores en momentos clave."
+      ],
+      "timeline": "4 semanas",
+      "endDate": "26 de diciembre",
+      "icon": "Rocket",
+      "colorTheme": "orange"
+    }
+  ],
+  "pricing_tiers": [
+    {
+      "icon": "Bot",
+      "title": "Ejecuciones del Agente",
+      "price": "$4.99",
+      "period": "USD por 2,500 ejecuciones",
+      "features": ["Precio ajustado al costo de ejecucion"],
+      "buttonText": "Comenzar",
+      "highlighted": false
+    },
+    {
+      "icon": "UserRound",
+      "title": "Usuario",
+      "price": "$29",
+      "period": "USD por mes",
+      "features": [
+        "Gestión centralizada de clientes y contactos",
+        "Registro y seguimiento de oportunidades de venta",
+        "Automatización de interacciones comerciales",
+        "Panel de control con KPIs de ventas",
+        "Notificaciones inteligentes y tareas automáticas"
+      ],
+      "buttonText": "Comenzar",
+      "highlighted": false
+    },
+    {
+      "icon": "Rocket",
+      "title": "Proyecto & Consultoría",
+      "price": "$19,999",
+      "period": "USD pago único",
+      "features": [
+        "Desarrollo de un agente de ventas adaptado al contexto de Casa Blanca.",
+        "Implementación de CRM para la gestión de clientes y oportunidades de venta.",
+        "Levantamiento del proceso y parametrización del sistema",
+        "Capacitación y contextualizacion sobre AI y Meta.",
+        "Capacitación a usuarios finales sober el uso de Fail Fast - AI CRM",
+        "Acompañamiento de un mes despues del lanzamiento del agente de ventas optimizando su desempeño"
+      ],
+      "buttonText": "Contactar",
+      "highlighted": true
+    }
+  ],
+  "commercial_terms": [
+    {
+      "icon": "DollarSign",
+      "text": "Forma de pago: 20% al inicio del proyecto,  30% al terminar la fase de Capacitaciones de Fail Fast, 50% contra entrega del agente en operación. Suscripciones de usuarios facturadas mensualmente de manera anticipada."
+    },
+    {
+      "icon": "FileText",
+      "text": "Facturación: emisión en USD. Impuestos locales (IVA/retenciones) no incluidos; se aplican según normativa vigente."
+    },
+    {
+      "icon": "Briefcase",
+      "text": "Alcance: el precio de proyecto cubre únicamente la implementación del agente de ventas por whatsapp, facebook e instagram y CRM en el proceso comercial. Integraciones adicionales, migraciones y desarrollos a medida se cotizan por separado."
+    },
+    {
+      "icon": "Clock",
+      "text": "Vigencia de la oferta: 15 días calendario a partir de la fecha de envío."
+    },
+    {
+      "icon": "Zap",
+      "text": "SLA y soporte: soporte estándar en horario hábil (L–V 8:00–17:00, GMT-5). Tiempo de primera respuesta: 2 horas hábiles."
+    },
+    {
+      "icon": "Users",
+      "text": "Capacitaciones: incluye onboarding inicial para la organización. Entrenamientos a la medida o sesiones adicionales se cotizan aparte."
+    },
+    {
+      "icon": "Shield",
+      "text": "Propiedad y datos: la información del cliente es de su exclusiva propiedad. Los derechos de Fail Fast y desarrollos seguiran siendo propiedad de Fail Fast."
+    },
+    {
+      "icon": "Shield",
+      "text": "Confidencialidad: ambas partes se comprometen a la reserva de la información técnica y comercial compartida."
+    },
+    {
+      "icon": "FileText",
+      "text": "Cambios y horas adicionales: solicitudes fuera de alcance se gestionan vía cambio controlado y se facturan según tarifa vigente."
+    },
+    {
+      "icon": "FileText",
+      "text": "Cancelación: en caso de cancelación anticipada del proyecto, se facturará el trabajo ejecutado y compromisos adquiridos."
+    }
+  ]
+}

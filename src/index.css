@@ -1,0 +1,247 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Comprehensive Blue Color Palette Transformation
+All colors follow the monochromatic blue theme with exact specifications.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Background Colors */
+    --background: 0 0% 100%; /* Pure white */
+    --foreground: 240 10% 3.9%; /* Dark charcoal */
+
+    --card: 0 0% 100%; /* Pure white */
+    --card-foreground: 240 10% 3.9%; /* Dark charcoal */
+
+    --popover: 0 0% 100%; /* Pure white */
+    --popover-foreground: 240 10% 3.9%; /* Dark charcoal */
+
+    /* Primary Blues - Core Brand Colors */
+    --primary: 231 100% 62%; /* #3E5AFF - Primary Blue */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
+    --primary-medium: 231 95% 62%; /* #426EFB - Medium Blue */
+    --primary-light: 231 93% 63%; /* #4C96F5 - Light Blue */
+    --primary-border: 231 94% 62.5%; /* #4887F7 - Border Blue */
+    --primary-dark: 240 100% 25.5%; /* #000083 - Dark Navy */
+
+    /* Secondary Colors */
+    --secondary: 0 0% 96%; /* Light gray background */
+    --secondary-foreground: 240 10% 3.9%; /* Dark charcoal */
+
+    --muted: 0 0% 96%; /* Light gray */
+    --muted-foreground: 0 0% 53.3%; /* #888888 - Medium gray */
+
+    /* Accent Colors */
+    --accent: 231 100% 97%; /* Very light blue tint */
+    --accent-foreground: 231 100% 62%; /* Primary blue */
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Borders and Inputs */
+    --border: 231 94% 62.5%; /* #4887F7 - Border Blue at 30% opacity equivalent */
+    --input: 220 13% 91%; /* Light gray for inputs */
+    --ring: 231 100% 62%; /* Primary blue for focus rings */
+
+    --radius: 1rem;
+
+    /* Gradient Colors for Light Mode */
+    --gradient-start: 0 0% 100%; /* White */
+    --gradient-end: 231 100% 97.5%; /* Very light blue */
+    
+    /* Text Gradient Colors */
+    --text-gradient-start: 231 100% 62%; /* #3E5AFF */
+    --text-gradient-mid: 231 95% 62%; /* #426EFB */
+    --text-gradient-end: 231 93% 63%; /* #4C96F5 */
+
+    /* Additional semantic colors */
+    --text-primary: 240 10% 3.9%; /* Dark charcoal */
+    --text-secondary: 0 0% 53.3%; /* #888888 - Medium gray */
+  }
+
+  .dark {
+    /* Dark Mode Background */
+    --background: 240 10% 3.9%; /* Nearly black with blue undertone */
+    --foreground: 0 0% 98%; /* Off-white */
+
+    --card: 240 10% 10%; /* Dark card background */
+    --card-foreground: 0 0% 98%; /* Off-white */
+
+    --popover: 240 10% 10%; /* Dark popover background */
+    --popover-foreground: 0 0% 98%; /* Off-white */
+
+    /* Primary Blues for Dark Mode - Slightly brighter */
+    --primary: 231 100% 70%; /* Brighter primary for dark mode */
+    --primary-foreground: 240 10% 3.9%; /* Dark text on primary */
+    --primary-medium: 231 95% 70%; /* Brighter medium blue */
+    --primary-light: 231 93% 73%; /* Brighter light blue */
+    --primary-border: 231 94% 70%; /* Brighter border blue */
+    --primary-dark: 240 100% 35%; /* Lighter dark navy for dark mode */
+
+    --secondary: 240 10% 15%; /* Dark secondary background */
+    --secondary-foreground: 0 0% 98%; /* Off-white */
+
+    --muted: 240 10% 15%; /* Dark muted background */
+    --muted-foreground: 0 0% 65%; /* Lighter muted text */
+
+    --accent: 240 10% 15%; /* Dark accent background */
+    --accent-foreground: 231 100% 70%; /* Bright blue accent */
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 10% 20%; /* Dark border */
+    --input: 240 10% 10%; /* Dark input background */
+    --ring: 231 100% 70%; /* Bright blue focus ring */
+
+    /* Dark Mode Gradients */
+    --gradient-start: 240 10% 3.9%; /* Dark background */
+    --gradient-end: 231 100% 8%; /* Very dark blue */
+    
+    /* Dark Mode Text Gradients - Brighter */
+    --text-gradient-start: 231 100% 75%; /* #5A72FF */
+    --text-gradient-mid: 231 95% 80%; /* #6086FF */
+    --text-gradient-end: 231 93% 85%; /* #70AEFF */
+
+    --text-primary: 0 0% 98%; /* Off-white */
+    --text-secondary: 0 0% 65%; /* Lighter secondary text */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply text-foreground antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+
+  h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  p {
+    @apply text-lg leading-relaxed;
+  }
+}
+
+@layer utilities {
+  /* Background Gradients */
+  .gradient-bg {
+    background: linear-gradient(to bottom right, 
+      hsl(var(--gradient-start)), 
+      hsl(var(--gradient-end))
+    );
+  }
+
+    .app-gradient-bg {
+    @apply bg-white;
+  }
+
+  /* .app-gradient-bg {
+    @apply bg-gradient-to-br from-white via-blue-50/50 to-indigo-50/30 dark:from-gray-900 dark:via-blue-950/20 dark:to-indigo-950/10;
+  } */
+
+  /* Text Gradients - Light and Dark Mode Compatible */
+  .gradient-text {
+    background: linear-gradient(to right, 
+      hsl(var(--text-gradient-start)), 
+      hsl(var(--text-gradient-mid)), 
+      hsl(var(--text-gradient-end))
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+  }
+
+  /* Blue-tinted Shadows */
+  .card-shadow {
+    box-shadow: 
+      0 4px 6px hsla(var(--primary), 0.1), 
+      0 10px 20px hsla(var(--primary), 0.06);
+  }
+
+  .card-shadow-hover {
+    transition: transform 300ms ease, box-shadow 300ms ease, filter 300ms ease;
+  }
+
+  .card-shadow-hover:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 
+      0 8px 12px hsla(var(--primary), 0.15), 
+      0 16px 32px hsla(var(--primary), 0.1);
+    filter: drop-shadow(0 4px 8px hsla(var(--primary), 0.2));
+  }
+
+  /* Interactive Button Hover Effects */
+  .btn-hover-effect {
+    transition: all 300ms ease;
+  }
+
+  .btn-hover-effect:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 12px hsla(var(--primary), 0.3));
+  }
+
+  .btn-hover-effect:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px hsla(var(--primary), 0.3);
+  }
+
+  /* Subtle Background Overlay */
+  .bg-overlay {
+    background: linear-gradient(to bottom right, 
+      white, 
+      hsla(var(--primary), 0.05), 
+      hsla(var(--primary-light), 0.03)
+    );
+  }
+
+  /* Border Effects */
+  .border-blue {
+    border-color: hsl(var(--primary-border));
+  }
+
+  .border-blue-subtle {
+    border-color: hsla(var(--primary), 0.2);
+  }
+
+  /* Focus States */
+  .focus-blue {
+    outline: 2px solid hsl(var(--primary));
+    outline-offset: 2px;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-32 lg:py-32 px-6 md:px-20;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .animate-gradient {
+    background-size: 200% auto;
+  }
+}
