@@ -1,7 +1,16 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import casablancaLogo from "@/assets/casablanca.png";
-import { Target, MessageCircle, Facebook, Instagram, Database, TrendingUp } from "lucide-react";
+import esvitalLogo from "@/assets/esvital.webp";
+
+import {
+  Target,
+  MessageCircle,
+  Facebook,
+  Instagram,
+  Database,
+  TrendingUp,
+  Calendar,
+} from "lucide-react";
 import proposalInfo from "@/proposal_info.json";
 
 // Helper function to parse markdown-style bold text
@@ -28,6 +37,7 @@ const platformIconMap: Record<
   MessageCircle,
   Facebook,
   Instagram,
+  Calendar,
 };
 
 // Color mapping for platforms
@@ -52,6 +62,12 @@ const colorMap: Record<
     border: "border-pink-500/30",
     icon: "text-pink-600",
     text: "text-pink-700 dark:text-pink-400",
+  },
+  yellow: {
+    bg: "bg-yellow-500/10",
+    border: "border-yellow-500/30",
+    icon: "text-yellow-600",
+    text: "text-yellow-700 dark:text-yellow-400",
   },
 };
 
@@ -96,9 +112,9 @@ const ClientIntroductionSection: React.FC<ClientIntroductionSectionProps> = ({
             <Card className="relative p-6 md:p-8 lg:p-8 backdrop-blur-sm bg-white/80 dark:bg-background/80 border shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group h-full border-neutral-200">
               <div className="relative space-y-6">
                 {/* Logo */}
-                <div className="pt-6 pb-4">
+                <div className="p-8">
                   <img
-                    src={casablancaLogo}
+                    src={esvitalLogo}
                     alt={`${proposalInfo.client_name} - Ambientes que inspiran`}
                   />
                 </div>

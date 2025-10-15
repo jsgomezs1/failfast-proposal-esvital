@@ -1,9 +1,10 @@
 {
-  "client_name": "Casablanca",
-  "client_logo": "@/assets/casablanca.png",
-  "client_description": "Casablanca representa una generación de empresas establecidas en el mercado que internalizaron que **solo aquellos que adopten la IA** serán los que sobrevivirán a esta nueva era. Con más de **43 años en el mercado** y presencia en **13 países**, Casablanca entiende que combinar su profundo conocimiento del mercado con la optimización de procesos a través de la inteligencia artificial es la clave para liderar el futuro.",
+  "client_name": "EsVital",
+  "client_logo": "@/assets/esvital.webp",
+  "client_description": "EsVital es un centro especializado en salud, estética y bienestar, enfocado en dermatología clínica, tratamientos estéticos y procedimientos láser. Con una visión orientada al futuro, la empresa reconoce que la **inteligencia artificial** será clave para optimizar procesos, mejorar la experiencia de los pacientes y elevar los estándares del sector. Esta mentalidad de evolución constante impulsa a EsVital a integrar soluciones digitales que fortalezcan su **liderazgo en el mercado**.",
+
   "objective": {
-    "description": "Implementar Fail Fast como el núcleo de un **CRM inteligente** que conecta clientes, productos y oportunidades, con un agente de IA que vende por:",
+    "description": "Implementar Fail Fast como el núcleo de un **CRM inteligente** orientado a la atención clínica: un **agente de IA** que **vende**, **consulta disponibilidad** (médicos y equipos) y **agenda citas automáticamente**, considerando turnos, tiempos de tratamientos y recursos necesarios.",
     "platforms": [
       {
         "name": "WhatsApp",
@@ -11,23 +12,19 @@
         "color": "green"
       },
       {
-        "name": "Facebook",
-        "icon": "Facebook",
-        "color": "blue"
-      },
-      {
-        "name": "Instagram",
-        "icon": "Instagram",
-        "color": "pink"
+        "name": "Google Calendar",
+        "icon": "Calendar",
+        "color": "yellow"
       }
     ],
     "key_capabilities": [
-      "Recomienda productos y clasifica clientes",
-      "Registra conversaciones y mantiene un historial completo",
-      "Incluye **intervención humana** en cierres de ventas",
-      "Genera un Dashboard para la toma de **decisiones estratégicas**"
+      "Conocer el **catálogo de tratamientos y productos**, incluyendo duración y recursos requeridos",
+      "Consultar y reservar **disponibilidad de médicos y equipos** en tiempo real",
+      "**Agendar citas y enviar recordatorios** sincronizados con Google Calendar",
+      "Registrar el **la historia clínica y sus conversaciones** en el CRM"
     ]
   },
+
   "project_phases": [
     {
       "step": "01",
@@ -114,6 +111,15 @@
     }
   ],
   "pricing_tiers": [
+    {
+      "icon": "FileCheck2",
+      "title": "Facturacion Electrónica",
+      "price": "220 COP",
+      "period": "220 pesos por transaccion",
+      "features": ["Facturacion electrónica"],
+      "buttonText": "Comenzar",
+      "highlighted": false
+    },
     {
       "icon": "Bot",
       "title": "Ejecuciones del Agente",

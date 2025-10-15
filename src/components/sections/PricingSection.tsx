@@ -21,6 +21,7 @@ import {
   FileText,
   DollarSign,
   Clock,
+  FileCheck2,
 } from "lucide-react";
 import proposalInfo from "@/proposal_info.json";
 
@@ -60,6 +61,7 @@ const iconMap: Record<
   FileText,
   DollarSign,
   Clock,
+  FileCheck2,
 };
 
 const PricingSection: React.FC<PricingSectionProps> = ({
@@ -91,7 +93,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({
           </h2>
         </div>
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 max-w-8xl mx-auto">
           {pricingTiers.map((tier, idx) => {
             const Icon = iconMap[tier.icon] || Bot;
             return (
