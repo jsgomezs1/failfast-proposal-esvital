@@ -115,7 +115,7 @@
       "title": "Facturacion Electrónica",
       "price": "220 COP",
       "period": "220 pesos por transaccion",
-      "features": ["Facturacion electrónica"],
+      "features": ["Facturacion electrónica", "RIPS"],
       "buttonText": "Comenzar",
       "highlighted": false
     },
