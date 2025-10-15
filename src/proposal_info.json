@@ -29,9 +29,9 @@
     {
       "step": "01",
       "title": "Preparación y levantamiento de información",
-      "intro": "Realizaremos sesiones de trabajo con el equipo de Casa Blanca para acordar las reglas de negocio del CRM y del agente:",
+      "intro": "Realizaremos sesiones de trabajo con el equipo de EsVital para acordar las reglas de negocio del CRM y del agente:",
       "description": [
-        "20 horas de levantamiento de información",
+        "10 horas de levantamiento de información",
         "Definir casos de uso prioritarios",
         "Definir el proceso comercial - pipe line",
         "Establecer categorías de clientes y oportunidades",
@@ -40,7 +40,7 @@
         "Acordar los canales de atención (WhatsApp, Facebook e Instagram)"
       ],
       "timeline": "2 semanas",
-      "endDate": "31 de octubre",
+      "endDate": "20–24 de Octubre",
       "icon": "Users",
       "colorTheme": "blue"
     },
@@ -56,7 +56,7 @@
         "Buenas prácticas para la interacción entre agente y asesor humano"
       ],
       "timeline": "1 semana",
-      "endDate": "21 de Noviembre",
+      "endDate": "27 de Octubre - 31 de Octubre",
       "icon": "Rocket",
       "colorTheme": "orange"
     },
@@ -65,47 +65,46 @@
       "title": "Desarrollo lógica de negocio",
       "intro": "Con los acuerdos previos, parametrizamos las reglas de negocio del CRM. Esta actividad la haremos en conjunto con el equipo de Casa Blanca.",
       "description": [
-        "Flujo de creacion de clientes y oportunidades",
-        "Oportunidades de venta",
-        "Tareas, citas, documentos y notas",
-        "Estructuras de migracion de Productos y distribuidores",
+        "Diseño funcional y técnico del CRM/ERP",
+        "Modelado de historias clínicas e inventarios (lotes/vencimientos)",
+        "Reglas de agenda por profesional y recurso",
+        "Prototipo navegable del CRM (embudo, ficha de paciente, mapa de tratamientos)",
         "Permisos de acceso",
         "Construccion de un tablero con las métricas definidas (conversaciones, oportunidades, conversiones y seguimiento por canal)"
       ],
-      "timeline": "2 semanas",
-      "endDate": "14 de noviembre",
+      "timeline": "3 semanas",
+      "endDate": "3 - 21 de Noviembre",
       "icon": "Database",
       "colorTheme": "purple"
     },
     {
       "step": "04",
-      "title": "Capacitaciones Fail Fast - AI CRM",
-      "intro": "Realizaremos sesiones de entrenamiento con el equipo de Casa Blanca para garantizar una adopción efectiva del CRM y del agente de ventas:",
+      "title": "Capacitaciones Fail Fast - CRM & ERP",
+      "intro": "Realizaremos sesiones de entrenamiento con el equipo de EsVital para garantizar una adopción efectiva del sistema y del agente de ventas:",
       "description": [
-        "10 horas de capacitación",
-        "Capacitaciones prácticas con el equipo comercial",
-        "Entrenamiento en flujos reales de atención y venta en WhatsApp, Facebook e Instagram",
-        "Uso de la segmentación de clientes y lectura de indicadores clave",
-        "Definición clara de los momentos en los que debe intervenir un asesor humano",
-        "Simulaciones de conversaciones con el agente para reforzar la experiencia",
-        "Sesiones de preguntas y respuestas para resolver dudas reales"
+        "20 horas de capacitación",
+        "Capacitaciones prácticas con los usuarios",
+        "Carga de datos maestros, parametrización de líneas de negocio (productos, paquetes, tratamientos)",
+        "Pruebas end-to-end de RIPS y facturación electrónica con casos reales; validación de auditoría y trazabilidad. ",
+        "Test: Operación con usuarios, conflictos de agenda."
       ],
-      "timeline": "1 semanas",
-      "endDate": "28 de noviembre",
+      "timeline": "2 semanas",
+      "endDate": "24 de Noviembre - 5 de Diciembre",
       "icon": "GraduationCap",
       "colorTheme": "teal"
     },
     {
       "step": "05",
-      "title": "Lanzamiento e iteracion - Agente de ventas (memoria y contexto)",
-      "intro": "Pondremos en marcha el agente que atiende por WhatsApp, iterando el contexto con el objetivo de optimizar su desempeño ",
+      "title": "Go Live",
+      "intro": " Salida en produccion del sistema ERP y CRM. ",
       "description": [
-        "Será capaz de recordar conversaciones por cliente",
-        "Recuperar el contexto en cada contacto y ofrecer recomendaciones alineadas con el portafolio.",
-        "Implementaremos las reglas acordadas para segmentar clientes y asignarles beneficios, con alertas y traspaso a asesores en momentos clave."
+        "Agente en producción",
+        "Monitoreo de KPIs (tiempos de atención, no-show, exactitud de agenda",
+        "Monitoreo de Facturacion y envio de RIPS",
+        "Ajustes requeridos"
       ],
-      "timeline": "4 semanas",
-      "endDate": "26 de diciembre",
+      "timeline": "2 semanas",
+      "endDate": "8-19 de diciembre",
       "icon": "Rocket",
       "colorTheme": "orange"
     }
@@ -135,9 +134,10 @@
       "price": "$29",
       "period": "USD por mes",
       "features": [
-        "Gestión centralizada de clientes y contactos",
+        "Gestión centralizada de clientes y agenda",
         "Registro y seguimiento de oportunidades de venta",
-        "Automatización de interacciones comerciales",
+        "Facturacion electrónica, RIPS",
+        "Contabilidad, Inventarios",
         "Panel de control con KPIs de ventas",
         "Notificaciones inteligentes y tareas automáticas"
       ],
@@ -150,12 +150,11 @@
       "price": "$19,999",
       "period": "USD pago único",
       "features": [
-        "Desarrollo de un agente de ventas adaptado al contexto de Casa Blanca.",
+        "Desarrollo de un agente de ventas adaptado al contexto de EsVital.",
         "Implementación de CRM para la gestión de clientes y oportunidades de venta.",
         "Levantamiento del proceso y parametrización del sistema",
         "Capacitación y contextualizacion sobre AI y Meta.",
-        "Capacitación a usuarios finales sober el uso de Fail Fast - AI CRM",
-        "Acompañamiento de un mes despues del lanzamiento del agente de ventas optimizando su desempeño"
+        "Capacitación a usuarios finales sober el uso de Fail Fast - AI CRM & ERP"
       ],
       "buttonText": "Contactar",
       "highlighted": true
@@ -164,7 +163,7 @@
   "commercial_terms": [
     {
       "icon": "DollarSign",
-      "text": "Forma de pago: 20% al inicio del proyecto,  30% al terminar la fase de Capacitaciones de Fail Fast, 50% contra entrega del agente en operación. Suscripciones de usuarios facturadas mensualmente de manera anticipada."
+      "text": "Forma de pago: 20% al inicio del proyecto,  20% al terminar la fase de desarrollo de logica de negocio, 30% al terminar la fase de Capacitaciones de Fail Fast, 30% contra entrega del proyecto. Suscripciones de usuarios facturadas mensualmente de manera anticipada."
     },
     {
       "icon": "FileText",
@@ -172,7 +171,7 @@
     },
     {
       "icon": "Briefcase",
-      "text": "Alcance: el precio de proyecto cubre únicamente la implementación del agente de ventas por whatsapp, facebook e instagram y CRM en el proceso comercial. Integraciones adicionales, migraciones y desarrollos a medida se cotizan por separado."
+      "text": "Alcance: el precio de proyecto cubre únicamente la implementación del CRM y ERP asi como el agente de ventas por whatsapp. Integraciones adicionales, migraciones y desarrollos a medida se cotizan por separado."
     },
     {
       "icon": "Clock",
