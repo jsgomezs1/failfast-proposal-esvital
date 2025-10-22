@@ -104,7 +104,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({
                     <Icon className="w-8 h-8 text-primary" />
                   </div>
                 </div>
-
+                
                 {/* Card */}
                 <Card className="h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border-primary/80">
                   <CardHeader className="text-center pt-11 pb-3">

@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Sparkles, Network, TrendingUp } from "lucide-react";
+import { Sparkles, Network, TrendingUp, Rocket } from "lucide-react";
 
 interface BrandStorySectionProps {
   sectionsRef: React.MutableRefObject<(HTMLElement | null)[]>;
@@ -25,11 +25,11 @@ const BrandStorySection: React.FC<BrandStorySectionProps> = ({
       <div className="container-custom relative z-10">
         {/* Header */}
         <div className="flex items-center justify-center gap-4 mb-8 animate-fade-in">
-          <Sparkles className="w-8 h-8 text-primary" />
+          <Rocket className="w-8 h-8 text-primary" />
           <h2 className="text-xl md:text-2xl font-bold tracking-wider text-foreground uppercase">
             Nuestro Origen
           </h2>
-          <Sparkles className="w-8 h-8 text-primary" />
+          <Rocket className="w-8 h-8 text-primary" />
         </div>
 
         {/* Main Hero Title */}
@@ -96,7 +96,7 @@ const BrandStorySection: React.FC<BrandStorySectionProps> = ({
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">
-                    Nuestra Misión
+                    Nuestro Objetivo
                   </h3>
                   <p className="text-base text-muted-foreground leading-relaxed">
                     Crear una nueva generación de ERP + CRM con{" "}
@@ -118,7 +118,7 @@ const BrandStorySection: React.FC<BrandStorySectionProps> = ({
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">
-                    Disponibilidad Total
+                    Agentes que trabajan por ti
                   </h3>
                   <p className="text-base text-muted-foreground leading-relaxed">
                     Los agentes Fail Fast están{" "}
@@ -171,7 +171,7 @@ const BrandStorySection: React.FC<BrandStorySectionProps> = ({
                 <div className="text-center relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary-light to-primary rounded-2xl blur-xl opacity-40 animate-pulse" />
                   <div className="relative inline-flex items-center justify-center w-24 h-24 rounded-2xl bg-gradient-to-br from-primary to-primary-light mb-4">
-                    <Sparkles className="w-12 h-12 text-white" />
+                    <Rocket className="w-12 h-12 text-white" />
                   </div>
                   <h4 className="text-2xl font-black gradient-text">
                     FAIL FAST

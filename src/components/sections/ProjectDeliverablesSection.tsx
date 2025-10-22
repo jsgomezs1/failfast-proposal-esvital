@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Clock, Users, Database, GraduationCap, Rocket, Calendar } from "lucide-react";
+import { Clock, Users, Database, GraduationCap, Rocket, Calendar, BrainCircuit } from "lucide-react";
 import proposalInfo from "@/proposal_info.json";
 
 interface ProjectDeliverablesSectionProps {
@@ -31,6 +31,7 @@ const iconMap: Record<
   Rocket,
   Clock,
   Calendar,
+  BrainCircuit
 };
 
 // Color mapping for phases
@@ -88,7 +89,8 @@ const ProjectDeliverablesSection: React.FC<ProjectDeliverablesSectionProps> = ({
         <div className="max-w-5xl mx-auto text-center mb-16 lg:mb-20">
           {/* Badge/Label with decorative lines */}
           <div className="flex items-center justify-center gap-3 mb-8 animate-fade-in">
-            <span className="text-sm md:text-base font-semibold tracking-wider text-primary uppercase flex items-center gap-2">
+          <span className="text-3xl md:text-4xl font-extrabold tracking-tight text-black dark:text-white flex items-center gap-2">
+
               <span className="inline-block w-2 h-2 rounded-full bg-primary animate-pulse" />
               Nuestra Metodología
             </span>

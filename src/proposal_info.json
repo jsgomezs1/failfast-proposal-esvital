@@ -31,13 +31,14 @@
       "intro": "Realizaremos sesiones de trabajo con el equipo de EsVital para acordar las reglas de negocio del CRM, historia clínica y del agente:",
       "description": [
         "4 horas de levantamiento de información",
-        "Validar el proceso de CRM",
+        "Validar el proceso de CRM e historia clínica",
         "Definir datos maestros (pacientes, profesionales, recursos e inventarios).",
         "Definir indicadores que se visualizarán en el dashboard",
+        "Definición de estructura de migracion de movimientos contables",
         "Definir las necesidades de interoperabilidad con WhatsApp y Google Calendar"
       ],
       "timeline": "1 semana",
-      "endDate": "20–24 de Octubre",
+      "endDate": "3–7 de noviembre",
       "icon": "Users",
       "colorTheme": "blue"
     },
@@ -46,54 +47,55 @@
       "title": "Contextualización en IA y Meta",
       "intro": "Brindaremos al equipo una visión práctica sobre el uso de Inteligencia Artificial y agentes aplicados al proceso comercial:",
       "description": [
-        "5 horas de capacitación",
+        "4 horas de capacitación y asesoria",
         "Introducción a conceptos clave de IA y agentes conversacionales",
         "Enfoque en la automatización de procesos comerciales",
-        "Uso estratégico de herramientas Meta (WhatsApp, Facebook e Instagram)",
-        "Buenas prácticas para la interacción entre agente y asesor humano"
+        "Uso estratégico de herramientas Meta (WhatsApp)"
       ],
       "timeline": "1 semana",
-      "endDate": "27 de Octubre - 31 de Octubre",
-      "icon": "Rocket",
+      "endDate": "3–7 de noviembre",
+      "icon": "brain-circuit",
       "colorTheme": "orange"
     },
     {
       "step": "03",
-      "title": "Desarrollo lógica de negocio",
+      "title": "Parametrización de reglas de negocio",
       "intro": "Con los acuerdos previos, parametrizamos las reglas de negocio del CRM. Esta actividad la haremos en conjunto con el equipo de EsVital.",
       "description": [
-        "Diseño funcional y técnico del CRM/ERP",
-        "Modelado de historias clínicas e inventarios (lotes/vencimientos)",
+        "Parametrización del CRM e historia clínica",
+        "Modelado de historias clínicas e inventarios",
+        "Desarrollo del agente de AI",
         "Reglas de agenda por profesional y recurso",
         "Prototipo navegable del CRM (embudo, ficha de paciente, mapa de tratamientos)",
         "Permisos de acceso",
         "Construccion de un tablero con las métricas definidas"
       ],
       "timeline": "3 semanas",
-      "endDate": "3 - 21 de Noviembre",
+      "endDate": "10 - 28 de noviembre",
       "icon": "Database",
       "colorTheme": "purple"
     },
     {
       "step": "04",
-      "title": "Capacitaciones Fail Fast - CRM & ERP",
+      "title": "Capacitaciones Fail Fast - CRM",
       "intro": "Realizaremos sesiones de entrenamiento con el equipo de EsVital para garantizar una adopción efectiva del sistema y del agente de ventas:",
       "description": [
-        "20 horas de capacitación",
+        "20 horas",
         "Capacitaciones prácticas con los usuarios",
         "Carga de datos maestros, parametrización de líneas de negocio (productos, paquetes, tratamientos)",
         "Pruebas end-to-end de RIPS y facturación electrónica con casos reales; validación de auditoría y trazabilidad.",
-        "Test: Operación con usuarios, conflictos de agenda."
+        "Test: Operación con usuarios, conflictos de agenda.",
+        "Test: Historia clínica"
       ],
       "timeline": "2 semanas",
-      "endDate": "24 de Noviembre - 5 de Diciembre",
+      "endDate": "1 - 12 de diciembre",
       "icon": "GraduationCap",
       "colorTheme": "teal"
     },
     {
       "step": "05",
       "title": "Go Live",
-      "intro": "Salida en producción del sistema ERP y CRM.",
+      "intro": "Salida en producción del sistema CRM e historia clínica.",
       "description": [
         "Agente en producción",
         "Monitoreo de KPIs (tiempos de atención, no-show, exactitud de agenda)",
@@ -101,7 +103,7 @@
         "Ajustes requeridos"
       ],
       "timeline": "2 semanas",
-      "endDate": "8-19 de diciembre",
+      "endDate": "5-9 de enero",
       "icon": "Rocket",
       "colorTheme": "orange"
     }
@@ -132,8 +134,8 @@
       "price": "$29",
       "period": "USD por mes",
       "features": [
-        "Gestión centralizada de clientes y agenda",
-        "Registro y seguimiento de oportunidades de venta",
+        "CRM - Gestión centralizada de clientes y agenda, registro y seguimiento de oportunidades de venta",
+        "Historia clínica - registro, catalogo de tratamientos, registro gráfico",
         "Facturación electrónica, RIPS",
         "Contabilidad, Inventarios",
         "Panel de control con KPIs de ventas",
