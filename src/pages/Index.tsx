@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import HeroSection from "@/components/sections/HeroSection";
 import ClientIntroductionSection from "@/components/sections/ClientIntroductionSection";
 import AboutFailFastSection from "@/components/sections/AboutFailFastSection";
+import BrandStorySection from "@/components/sections/BrandStorySection";
 import SmallTeamsSection from "@/components/sections/SmallTeamsSection";
 import ProjectDeliverablesSection from "@/components/sections/ProjectDeliverablesSection";
 import PricingSection from "@/components/sections/PricingSection";
@@ -34,10 +35,11 @@ const Index = () => {
       <HeroSection sectionsRef={sectionsRef} index={0} />
       <ClientIntroductionSection sectionsRef={sectionsRef} index={1} />
       <AboutFailFastSection sectionsRef={sectionsRef} index={2} />
-      <SmallTeamsSection sectionsRef={sectionsRef} index={3} />
-      <ProjectDeliverablesSection sectionsRef={sectionsRef} index={4} />
-      <PricingSection sectionsRef={sectionsRef} index={5} />
-      <ClosingSection sectionsRef={sectionsRef} index={6} />
+      <BrandStorySection sectionsRef={sectionsRef} index={3} />
+      <SmallTeamsSection sectionsRef={sectionsRef} index={4} />
+      <ProjectDeliverablesSection sectionsRef={sectionsRef} index={5} />
+      <PricingSection sectionsRef={sectionsRef} index={6} />
+      <ClosingSection sectionsRef={sectionsRef} index={7} />
     </div>
   );
 };
