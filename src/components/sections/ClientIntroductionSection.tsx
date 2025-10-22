@@ -29,6 +29,17 @@ const parseFormattedText = (text: string) => {
   });
 };
 
+// 🪄 Helper para manejar saltos de línea en bullets
+const splitBullet = (text: string) => {
+  const lines = text.split(/\r?\n/); // separamos por salto de línea
+  const head = lines[0] || "";
+  const subs = lines
+    .slice(1)
+    .map((s) => s.replace(/^\s*-\s?/, "").trim())
+    .filter(Boolean);
+  return { head, subs };
+};
+
 // Icon mapping for platforms
 const platformIconMap: Record<
   string,
@@ -122,8 +133,10 @@ const ClientIntroductionSection: React.FC<ClientIntroductionSectionProps> = ({
                 {/* Description */}
                 <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed">
                   <p>{parseFormattedText(proposalInfo.client_description)}</p>
+              
                 </div>
               </div>
+              
             </Card>
           </div>
 
@@ -170,7 +183,7 @@ const ClientIntroductionSection: React.FC<ClientIntroductionSectionProps> = ({
                   </div>
 
                   {/* Key Capabilities */}
-                  <div className="space-y-3 pt-2">
+                  {/* <div className="space-y-3 pt-2">
                     {proposalInfo.objective.key_capabilities.map(
                       (capability, index) => (
                         <div key={index} className="flex items-start gap-3">
@@ -181,6 +194,27 @@ const ClientIntroductionSection: React.FC<ClientIntroductionSectionProps> = ({
                         </div>
                       )
                     )}
+                  </div> */}
+                  {/* Key Capabilities */}
+                  <div className="space-y-3 pt-2">
+                    {proposalInfo.objective.key_capabilities.map((capability, index) => {
+                      const { head, subs } = splitBullet(capability);
+                      return (
+                        <div key={index} className="flex items-start gap-3">
+                          <div className="w-1.5 h-1.5 rounded-full bg-gray-600 mt-2" />
+                          <div className="text-muted-foreground">
+                            <p>{parseFormattedText(head)}</p>
+                            {subs.length > 0 && (
+                              <ul className="mt-2 ml-5 list-disc space-y-1">
+                                {subs.map((s, i) => (
+                                  <li key={i}>{parseFormattedText(s)}</li>
+                                ))}
+                              </ul>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               </div>

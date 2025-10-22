@@ -2,13 +2,20 @@
   "client_name": "EsVital",
   "client_logo": "@/assets/esvital.webp",
   "client_description": "EsVital es un centro especializado en salud, estética y bienestar, enfocado en dermatología clínica, tratamientos estéticos y procedimientos láser. Con una visión orientada al futuro, la empresa reconoce que la **inteligencia artificial** será clave para optimizar procesos, mejorar la experiencia de los pacientes y elevar los estándares del sector. Esta mentalidad de evolución constante impulsa a EsVital a integrar soluciones digitales que fortalezcan su **liderazgo en el mercado**.",
-
   "objective": {
     "description": "Implementar Fail Fast como el núcleo de un **CRM inteligente** orientado a la **atención clínica**, que nos permite:",
     "key_capabilities": [
-      "**Gestión de historia clínica**\n  - **Catálogo de tratamientos y productos**, incluyendo duración y recursos requeridos. \nConsulta y reserva **disponibilidad de médicos y equipos** en tiempo real. \n **Registro gráfico** de la evolución del Paciente",
-      "**Gestión de clientes en el CRM** \n -Análisis de Origen del Cliente \n -Dashboard del comportamiento de Clientes",
-      "**Agente de IA que vende** \n  -Consulta disponibilidad (médicos y equipos) y **agenda citas automáticamente**, considerando turnos, tiempos de tratamientos y recursos necesarios. \n -Agenda citas y enviar recordatorios sincronizados con **Google Calendar**"
+      {
+        "text": "Gestionar la **historia clínica** del paciente",
+        "children": [
+          "**catálogo de tratamientos y productos**, incluyendo duración y recursos requeridos."
+        ]
+      },
+      "**Gestión de clientes en el CRM**",
+      "Análisis de Origen del Cliente",
+      "Un **agente de IA que vende**, consulta disponibilidad (médicos y equipos) y **agenda citas automáticamente**, considerando turnos, tiempos de tratamientos y recursos necesarios.",
+      "Consultar y reservar **disponibilidad de médicos y equipos** en tiempo real.",
+      "**Agendar citas y enviar recordatorios** sincronizados con Google Calendar"
     ],
     "platforms": [
       {
@@ -23,7 +30,6 @@
       }
     ]
   },
-
   "project_phases": [
     {
       "step": "01",
@@ -67,7 +73,7 @@
         "Reglas de agenda por profesional y recurso",
         "Prototipo navegable del CRM (embudo, ficha de paciente, mapa de tratamientos)",
         "Permisos de acceso",
-        "Construccion de un tablero con las métricas definidas"
+        "Construcción de un tablero con las métricas definidas"
       ],
       "timeline": "3 semanas",
       "endDate": "3 - 21 de Noviembre",
@@ -97,7 +103,7 @@
       "description": [
         "Agente en producción",
         "Monitoreo de KPIs (tiempos de atención, no-show, exactitud de agenda)",
-        "Monitoreo de Facturacion y envío de RIPS",
+        "Monitoreo de Facturación y envío de RIPS",
         "Ajustes requeridos"
       ],
       "timeline": "2 semanas",
@@ -106,7 +112,6 @@
       "colorTheme": "orange"
     }
   ],
-
   "pricing_tiers": [
     {
       "icon": "FileCheck2",
@@ -158,7 +163,6 @@
       "highlighted": true
     }
   ],
-
   "commercial_terms": [
     {
       "icon": "DollarSign",
