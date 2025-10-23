@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import failFastLogo from "@/assets/Logo-blanco.png";
-import esvitalLogo from "@/assets/esvital.webp";
+import casablanca from "@/assets/casablanca.png";
 import { ArrowDown, ArrowRight } from "lucide-react";
 import proposalInfo from "@/proposal_info.json";  
 
@@ -128,7 +128,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ sectionsRef, index }) => {
                 </div>
                 <div className="relative  bg-white/40 dark:bg-background/40 rounded-3xl p-6 md:p-8 lg:p-10 border border-white/20 shadow-2xl">
                   <img
-                    src={esvitalLogo}
+                    src={casablanca}
                     alt={`${proposalInfo.client_name} Logo`}
                     className="w-full max-w-sm md:max-w-md lg:max-w-md xl:max-w-lg h-auto object-contain drop-shadow-2xl"
                   />
