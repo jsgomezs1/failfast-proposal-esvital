@@ -1,7 +1,17 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Package, BarChart3, Wallet, Brain, Network, Sparkles } from "lucide-react";
+import {
+  Package,
+  BarChart3,
+  Wallet,
+  User,
+  Brain,
+  Network,
+  Sparkles,
+  Smile,
+  Stethoscope,
+} from "lucide-react";
 import Facebook from "@/assets/Facebook.webp";
 import Instagram from "@/assets/Instagram.png";
 import Whatsapp from "@/assets/whatsapp.webp";
@@ -65,7 +75,7 @@ const AboutFailFastSection: React.FC<AboutFailFastSectionProps> = ({
           </h1>
         </div>
 
-        {/* CRITICAL: Differentiator Callout Banner */}
+        {/* CRITICAL: Differentiator Callout Banner (opcional, vacío para mantener diseño) */}
         <div
           className="max-w-4xl mx-auto mb-16 animate-fade-in"
           style={{ animationDelay: "0.2s" }}
@@ -73,14 +83,51 @@ const AboutFailFastSection: React.FC<AboutFailFastSectionProps> = ({
           <div className="relative group">
             {/* Glowing background */}
             <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary-light to-primary rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
-
-            {/* Main callout card */}
+            {/* Main callout card (puedes añadir contenido si quieres) */}
           </div>
         </div>
 
         {/* Enhanced Feature Grid */}
         <div className="grid md:grid-cols-3 gap-8 lg:gap-8 max-w-6xl mx-auto mb-16">
-          {/* Card 1: Productos */}
+          {/* TOP: Card grande de Agentes (ocupa las 3 columnas) */}
+          <div
+            className="md:col-span-3 animate-fade-in"
+            style={{ animationDelay: "0.3s" }}
+          >
+            <Card className="relative p-8 md:p-10 lg:p-8 h-full backdrop-blur-sm bg-white/80 dark:bg-background/80 border border-primary/20 shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group">
+              {/* Badge number */}
+              <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-primary-light/20 flex items-center justify-center">
+                <span className="text-xl font-black text-primary">00</span>
+              </div>
+
+              {/* Icon */}
+              <div className="mb-6">
+                <div className="inline-flex p-4 rounded-2xl bg-gradient-to-br from-primary/10 to-primary-light/10 group-hover:from-primary/20 group-hover:to-primary-light/20 transition-colors duration-300">
+                  <User className="w-14 h-14 text-primary" strokeWidth={2} />
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="relative space-y-4">
+                <h3 className="text-2xl md:text-3xl lg:text-2xl font-bold text-foreground">
+                  Agentes de AI
+                </h3>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                  Nuestros agentes conocen el detalle del contexto de tu
+                  empresa y de tus pacientes:
+                  <span className="text-foreground font-semibold">
+                    {" "}
+                    historia clínica, catálogo de tratamientos, citas y registro
+                    gráfico
+                  </span>
+                  . Responden con precisión y pueden accionar flujos (agendar,
+                  consultar stock, facturar).
+                </p>
+              </div>
+            </Card>
+          </div>
+
+          {/* Card 1: Historia Clínica */}
           <div className="animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <Card className="relative p-8 md:p-10 lg:p-8 h-full backdrop-blur-sm bg-white/80 dark:bg-background/80 border border-primary/20 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 overflow-hidden group">
               {/* Badge number */}
@@ -91,23 +138,23 @@ const AboutFailFastSection: React.FC<AboutFailFastSectionProps> = ({
               {/* Icon */}
               <div className="mb-6">
                 <div className="inline-flex p-4 rounded-2xl bg-gradient-to-br from-primary/10 to-primary-light/10 group-hover:from-primary/20 group-hover:to-primary-light/20 transition-colors duration-300">
-                  <Package className="w-14 h-14 text-primary" strokeWidth={2} />
+                  <Stethoscope className="w-14 h-14 text-primary" strokeWidth={2} />
                 </div>
               </div>
 
               {/* Content */}
               <div className="relative space-y-4">
                 <h3 className="text-2xl md:text-3xl lg:text-2xl font-bold text-foreground">
-                  Productos
+                  Historia Clínica
                 </h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Nuestros agentes conocen cada detalle de tus productos:
+                  Historia clínica unificada con
                   <span className="text-foreground font-semibold">
                     {" "}
-                    especificaciones, precios, disponibilidad y características
+                    catálogo de tratamientos, tiempos, recursos y registro
+                    gráfico
                   </span>
-                  . Toda la información de tu catálogo vive en Fail Fast,
-                  permitiendo respuestas precisas y contextualizadas.
+                  . Permite agendas inteligentes y seguimiento asistencial.
                 </p>
               </div>
             </Card>
@@ -140,19 +187,18 @@ const AboutFailFastSection: React.FC<AboutFailFastSectionProps> = ({
                   Inventario
                 </h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Los agentes tienen acceso completo a tu inventario en{" "}
+                  Control de inventario en tiempo real:
                   <span className="text-foreground font-semibold">
-                    tiempo real: stock disponible, movimientos, proveedores y
-                    tendencias
+                    {" "}
+                    stock disponible, entradas y salidas
                   </span>
-                  . Toda esta información vive en Fail Fast, garantizando
-                  decisiones informadas.
+                  . Integra lotes y vencimientos para uso clínico seguro.
                 </p>
               </div>
             </Card>
           </div>
 
-          {/* Card 3: Cartera */}
+          {/* Card 3: Facturación */}
           <div className="animate-fade-in" style={{ animationDelay: "0.6s" }}>
             <Card className="relative p-8 md:p-10 lg:p-8 h-full backdrop-blur-sm bg-white/80 dark:bg-background/80 border border-primary/20 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 overflow-hidden group">
               {/* Badge number */}
@@ -170,17 +216,51 @@ const AboutFailFastSection: React.FC<AboutFailFastSectionProps> = ({
               {/* Content */}
               <div className="relative space-y-4">
                 <h3 className="text-2xl md:text-3xl lg:text-2xl font-bold text-foreground">
-                  Cartera
+                  Facturación
                 </h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Nuestros agentes conocen el estado completo de tu cartera:
+                  Cumplimiento normativo colombiano:
                   <span className="text-foreground font-semibold">
                     {" "}
-                    clientes, cuentas por pagar, comportamiento de pago y
-                    oportunidades.
+                    Facturación electrónica y RIPS
                   </span>
-                  Toda esta información financiera vive en Fail Fast,
-                  optimizando la gestión.
+                  . Alimenta dashboards de{" "}
+                  <span className="text-foreground font-semibold">CRM</span> para
+                  análisis de comportamiento y recaudo.
+                </p>
+              </div>
+            </Card>
+          </div>
+
+          {/* Fila 2: CRM (ocupa 3 columnas) */}
+          
+            <div className="grid md:grid gap-8 lg:gap-8 max-w-6xl mx-auto mb-16" >
+            <Card className="relative p-8 md:p-10 lg:p-8 h-full backdrop-blur-sm bg-white/80 dark:bg-background/80 border border-primary/20 shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group">
+              {/* Badge number */}
+              <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-primary-light/20 flex items-center justify-center">
+                <span className="text-xl font-black text-primary">04</span>
+              </div>
+
+              {/* Icon */}
+              <div className="mb-6">
+                <div className="inline-flex p-4 rounded-2xl bg-gradient-to-br from-primary/10 to-primary-light/10 group-hover:from-primary/20 group-hover:to-primary-light/20 transition-colors duration-300">
+                  <Smile className="w-14 h-14 text-primary" strokeWidth={2} />
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="relative space-y-4">
+                <h3 className="text-2xl md:text-3xl lg:text-2xl font-bold text-foreground">
+                  CRM
+                </h3>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                  Gestión de clientes completa:
+                  <span className="text-foreground font-semibold">
+                    {" "}
+                    base de datos, fuentes de origen, dashboards, agendas y
+                    citas
+                  </span>
+                  . Conecta con agentes para orquestar seguimiento y conversión.
                 </p>
               </div>
             </Card>

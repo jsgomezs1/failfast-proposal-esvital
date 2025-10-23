@@ -1,9 +1,15 @@
 {
-  "client_name": "Casablanca",
-  "client_logo": "@/assets/casablanca.png",
-  "client_description": "Casablanca representa una generación de empresas establecidas en el mercado que internalizaron que **solo aquellos que adopten la IA** serán los que sobrevivirán a esta nueva era. Con más de **43 años en el mercado** y presencia en **13 países**, Casablanca entiende que combinar su profundo conocimiento del mercado con la optimización de procesos a través de la inteligencia artificial es la clave para liderar el futuro.",
+  "client_name": "EsVital",
+  "client_logo": "@/assets/esvital.webp",
+  "client_description": "EsVital es un centro especializado en salud, estética y bienestar, enfocado en dermatología clínica, tratamientos estéticos y procedimientos láser. Con una visión orientada al futuro, la empresa reconoce que la **inteligencia artificial** será clave para optimizar procesos, mejorar la experiencia de los pacientes y elevar los estándares del sector. Esta mentalidad de evolución constante impulsa a EsVital a integrar soluciones digitales que fortalezcan su **liderazgo en el mercado**.",
+
   "objective": {
-    "description": "Implementar un agente de IA para las ventas a traves de:",
+    "description": "Implementar Fail Fast como el núcleo de un **CRM inteligente** orientado a la **atención clínica**, que nos permite:",
+    "key_capabilities": [
+      "**Gestión de historia clínica**\n  - **Catálogo de tratamientos y productos**, incluyendo duración y recursos requeridos. \nConsulta y reserva **disponibilidad de médicos y equipos** en tiempo real. \n **Registro gráfico** de la evolución del Paciente",
+      "**Gestión de clientes en el CRM** \n -Análisis de Origen del Cliente \n -Dashboard del comportamiento de Clientes",
+      "**Agente IA -  ventas** \n  -Consulta disponibilidad (médicos y equipos) y **agenda citas automáticamente**, considerando turnos, tiempos de tratamientos y recursos necesarios. \n -Agenda citas y enviar recordatorios sincronizados con **Google Calendar**"
+    ],
     "platforms": [
       {
         "name": "WhatsApp",
@@ -11,37 +17,28 @@
         "color": "green"
       },
       {
-        "name": "Facebook",
-        "icon": "Facebook",
-        "color": "blue"
-      },
-      {
-        "name": "Instagram",
-        "icon": "Instagram",
-        "color": "pink"
+        "name": "Google Calendar",
+        "icon": "Calendar",
+        "color": "yellow"
       }
-    ],
-    "key_capabilities": [
-      "Recomienda productos y clasifica clientes",
-      "Registra conversaciones y mantiene un historial completo",
-      "Incluye **intervención humana** en cierres de ventas",
-      "Genera un Dashboard para la toma de **decisiones estratégicas**"
     ]
   },
+
   "project_phases": [
     {
       "step": "01",
-      "title": "Preparación y levantamiento de información",
-      "intro": "Realizaremos sesiones de trabajo con el equipo de Casa Blanca para acordar las reglas de negocio del agente:",
+      "title": "Preparación y definición de proceso",
+      "intro": "Realizaremos sesiones de trabajo con el equipo de EsVital para acordar las reglas de negocio del CRM, historia clínica y del agente:",
       "description": [
-        "10 horas de levantamiento de información",
-        "Definir casos de uso prioritarios",
-        "Definir el proceso comercial - pipe line",
-        "Determinar momentos en los que debe intervenir un asesor",
-        "Acordar los canales de atención (WhatsApp, Facebook e Instagram)"
+        "4 horas de levantamiento de información",
+        "Validar el proceso de CRM e historia clínica",
+        "Definir datos maestros (pacientes, profesionales, recursos e inventarios).",
+        "Definir indicadores que se visualizarán en el dashboard",
+        "Definición de estructura de migracion de movimientos contables",
+        "Definir las necesidades de interoperabilidad con WhatsApp y Google Calendar"
       ],
-      "timeline": "1 semanas",
-      "endDate": "24 de octubre",
+      "timeline": "1 semana",
+      "endDate": "3–7 de noviembre",
       "icon": "Users",
       "colorTheme": "blue"
     },
@@ -50,94 +47,135 @@
       "title": "Contextualización en IA y Meta",
       "intro": "Brindaremos al equipo una visión práctica sobre el uso de Inteligencia Artificial y agentes aplicados al proceso comercial:",
       "description": [
-        "5 horas de capacitación",
+        "4 horas de capacitación y asesoria",
         "Introducción a conceptos clave de IA y agentes conversacionales",
         "Enfoque en la automatización de procesos comerciales",
-        "Uso estratégico de herramientas Meta (WhatsApp, Facebook e Instagram)",
-        "Buenas prácticas para la interacción entre agente y asesor humano"
+        "Uso estratégico de herramientas Meta (WhatsApp)"
       ],
       "timeline": "1 semana",
-      "endDate": "31 de Octubre",
-      "icon": "Rocket",
+      "endDate": "3–7 de noviembre",
+      "icon": "brain-circuit",
       "colorTheme": "orange"
     },
     {
       "step": "03",
-      "title": "Desarrollo de Agente de IA",
-      "intro": "Customización del Agente de acuerdo con las caracteristicas definidas durante el levantamiento de información",
+      "title": "Parametrización de reglas de negocio",
+      "intro": "Con los acuerdos previos, parametrizamos las reglas de negocio del CRM. Esta actividad la haremos en conjunto con el equipo de EsVital.",
       "description": [
-        "Se aplican modificaciones al agente para que cumpla con las reglas de negocio establecidas",
-        "Despliegue del Agente en ambiente productivo en los Canales de Atención seleccionados"
+        "Modelado del CRM e historia clínica",
+        "Modelado facturación e inventarios",
+        "Desarrollo del agente de AI",
+        "Reglas de agenda por profesional y recurso",
+        "Prototipo navegable del CRM (embudo, ficha de paciente, mapa de tratamientos)",
+        "Permisos de acceso",
+        "Construccion de un tablero con las métricas definidas"
       ],
-      "timeline": "2 semanas",
-      "endDate": "14 de Noviembre",
-      "icon": "Rocket",
-      "colorTheme": "green"
+      "timeline": "3 semanas",
+      "endDate": "10 - 28 de noviembre",
+      "icon": "Database",
+      "colorTheme": "purple"
     },
     {
       "step": "04",
-      "title": "Lanzamiento e iteracion - Agente de ventas (memoria y contexto)",
-      "intro": "Pondremos en marcha el agente, iterando el contexto con el objetivo de optimizar su desempeño ",
+      "title": "Capacitaciones Fail Fast - CRM",
+      "intro": "Realizaremos sesiones de entrenamiento con el equipo de EsVital para garantizar una adopción efectiva del sistema y del agente de ventas:",
       "description": [
-        "Será capaz de recordar conversaciones por cliente",
-        "Recuperar el contexto en cada contacto y ofrecer recomendaciones alineadas con el portafolio.",
-        "Implementaremos las reglas acordadas para alertas y traspaso a asesores en momentos clave."
+        "20 horas",
+        "Capacitaciones prácticas con los usuarios",
+        "Carga de datos maestros, parametrización de líneas de negocio (productos, paquetes, tratamientos)",
+        "Pruebas end-to-end de RIPS y facturación electrónica con casos reales; validación de auditoría y trazabilidad.",
+        "Test: Operación con usuarios, conflictos de agenda.",
+        "Test: Historia clínica"
       ],
       "timeline": "2 semanas",
-      "endDate": "28 de Noviembre",
+      "endDate": "1 - 12 de diciembre",
+      "icon": "GraduationCap",
+      "colorTheme": "teal"
+    },
+    {
+      "step": "05",
+      "title": "Go Live",
+      "intro": "Salida en producción del sistema CRM e historia clínica.",
+      "description": [
+        "Agente en producción",
+        "Monitoreo de KPIs (tiempos de atención, no-show, exactitud de agenda)",
+        "Monitoreo de Facturacion y envío de RIPS",
+        "Ajustes requeridos"
+      ],
+      "timeline": "2 semanas",
+      "endDate": "5-9 de enero",
       "icon": "Rocket",
       "colorTheme": "orange"
     }
   ],
+
   "pricing_tiers": [
     {
-      "icon": "Rocket",
-      "title": "Agente de Ventas",
-      "price": "$835",
-      "period": "USD mensual",
+      "icon": "FileCheck2",
+      "title": "Facturación Electrónica",
+      "price": "220 COP",
+      "period": "220 pesos por transacción",
+      "features": ["Facturación electrónica", "RIPS"],
+      "buttonText": "Comenzar",
+      "highlighted": false
+    },
+    {
+      "icon": "Bot",
+      "title": "Ejecuciones del Agente",
+      "price": "$4.99",
+      "period": "USD por 2,500 ejecuciones",
+      "features": ["Precio ajustado al costo de ejecución"],
+      "buttonText": "Comenzar",
+      "highlighted": false
+    },
+    {
+      "icon": "UserRound",
+      "title": "Usuario",
+      "price": "$29",
+      "period": "USD por mes",
       "features": [
-        "Desarrollo de un agente de ventas adaptado al contexto de Casa Blanca.",
-        "Levantamiento del proceso de automatización del agente",
-        "Capacitación y contextualizacion sobre AI y Meta.",
-        "Acompañamiento de un mes despues del lanzamiento del agente de ventas optimizando su desempeño",
-        "Dos usuarios en la plataforma Fail Fast",
-        "Automatización de interacciones comerciales",
+        "CRM - Gestión centralizada de clientes y agenda, registro y seguimiento de oportunidades de venta",
+        "Historia clínica - registro, catalogo de tratamientos, registro gráfico",
+        "Facturación electrónica, RIPS",
+        "Contabilidad, Inventarios",
         "Panel de control con KPIs de ventas",
-        "Notificaciones inteligentes y tareas automáticas",
-        "2500 ejecuciones del agente",
-        "Solucion 100% en la nube - disponibilidad 7X24X365",
-        "Soporte 5X8"
+        "Notificaciones inteligentes y tareas automáticas"
       ],
-      "buttonText": "Contactar",
-      "highlighted": true
+      "buttonText": "Comenzar",
+      "highlighted": false
     },
     {
       "icon": "Rocket",
-      "title": "Activa una fuerza laboral sin límites con ",
-      "price": "Agentes de IA",
-      "period": "",
+      "title": "Proyecto & Consultoría",
+      "price": "$19,999",
+      "period": "USD pago único",
       "features": [
-        "🚀 Rompe las barreras del tiempo — los agentes trabajan 24/7, sin pausas ni restricciones.",
-        "🤝 Amplía tu equipo sin contratar más — los agentes de IA se integran a tu fuerza laboral humana.",
-        "⚡  Optimiza la productividad — los agentes ejecutan tareas operativas para liberar tiempo valioso.",
-        "🎯 Enfoca a tu equipo en lo que importa — las personas se concentran en tareas estratégicas y de alto impacto."
+        "Desarrollo de un agente de ventas adaptado al contexto de EsVital.",
+        "Implementación de CRM para la gestión de clientes y oportunidades de venta.",
+        "Implementación de facturación electrónica y RIPS ",
+        "Implementación de Historia Clínica ",
+        "Levantamiento del proceso y parametrización del sistema",
+        "Desarrollo de la estructura para migración de",
+        "Capacitación y contextualización sobre AI y Meta.",
+        "Capacitación a usuarios finales sobre el uso de Fail Fast - AI CRM"
       ],
       "buttonText": "Contactar",
       "highlighted": true
     }
   ],
+
   "commercial_terms": [
     {
       "icon": "DollarSign",
-      "text": "Forma de pago: el valor mensual se factura por anticipado, contando con 5 días habiles para su pago."
+      "text": "Forma de pago: 20% al inicio del proyecto, 20% al terminar la fase de desarrollo de lógica de negocio, 30% al terminar la fase de Capacitaciones de Fail Fast, 30% contra entrega del proyecto. Suscripciones de usuarios facturadas mensualmente de manera anticipada."
     },
     {
       "icon": "FileText",
-      "text": "Facturación: emisión en USD desde EE.UU. (Fail Fast Inc.) o en COP a través de Quality Software SAS (Colombia), según el acuerdo comercial. El servicio en la nube está exento de IVA conforme al artículo 476 del Estatuto Tributario."
+      "text": "Facturación: emisión en USD. Impuestos locales (IVA/retenciones) no incluidos; se aplican según normativa vigente."
     },
     {
       "icon": "Briefcase",
-      "text": "Alcance: el precio del proyecto cubre el desarrollo e implementación del agente de ventas para WhatsApp, Facebook e Instagram. Integraciones adicionales, migraciones o desarrollos a medida se cotizan por separado."
+      "text": "Alcance: el precio de proyecto cubre únicamente la implementación del CRM y ERP así como el agente de ventas por WhatsApp. Integraciones adicionales, migraciones y desarrollos a medida se cotizan por separado."
     },
     {
       "icon": "Clock",
@@ -149,11 +187,11 @@
     },
     {
       "icon": "Users",
-      "text": "Capacitaciones: incluye onboarding inicial para los usuarios. Entrenamientos personalizados o sesiones adicionales se cotizan aparte."
+      "text": "Capacitaciones: incluye onboarding inicial para la organización. Entrenamientos a la medida o sesiones adicionales se cotizan aparte."
     },
     {
       "icon": "Shield",
-      "text": "Propiedad y datos: la información del cliente es de su exclusiva propiedad. Los derechos sobre la plataforma y desarrollos continúan siendo propiedad de Fail Fast."
+      "text": "Propiedad y datos: la información del cliente es de su exclusiva propiedad. Los derechos de Fail Fast y desarrollos seguirán siendo propiedad de Fail Fast."
     },
     {
       "icon": "Shield",
@@ -161,7 +199,11 @@
     },
     {
       "icon": "FileText",
-      "text": "Tiempo mínimo de contratación: 12 meses. En caso de cancelación anticipada, se facturará el servicio restante. Posterior al primer año, el cliente podrá cancelar el servicio en cualquier momento sin penalidad."
+      "text": "Cambios y horas adicionales: solicitudes fuera de alcance se gestionan vía cambio controlado y se facturan según tarifa vigente."
+    },
+    {
+      "icon": "FileText",
+      "text": "Cancelación: en caso de cancelación anticipada del proyecto, se facturará el trabajo ejecutado y compromisos adquiridos."
     }
   ]
 }

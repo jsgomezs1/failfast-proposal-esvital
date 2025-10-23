@@ -93,7 +93,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({
           </h2>
         </div>
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-6 max-w-8xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 max-w-8xl mx-auto">
           {pricingTiers.map((tier, idx) => {
             const Icon = iconMap[tier.icon] || Bot;
             return (
