@@ -5,10 +5,19 @@ import cineColombiaImg from "@/assets/cine-colombia.png";
 import satImg from "@/assets/SAT.png";
 import telasRealImg from "@/assets/telas-real.png";
 import alivalImg from "@/assets/alival.png";
+import montserrat from "@/assets/montserrat.png";
+import paul from "@/assets/paul.png";
 
 const demoData = {
   heading: "Equipos que confian en Nosotros",
   logos: [
+    {
+      id: "montserrat",
+      description: "Clínica Montserrat",
+      image: montserrat,
+      url: "https://clinicamontserrat.com.co/",
+      className: "h-28 md:h-36 lg:h-32 w-auto",
+    },
     {
       id: "Okendo",
       description: "Okendo",
@@ -52,6 +61,14 @@ const demoData = {
       url: "https://www.alival.com.co/",
       className: "h-28 md:h-36 lg:h-32 w-auto",
     },
+    {
+      id: "paul",
+      description: "Hostpital San Vicente de Paul",
+      image: paul,
+      url: "https://hsvpfilandia.gov.co/#",
+      className: "h-28 md:h-36 lg:h-32 w-auto",
+    },
+
   ],
 };
 

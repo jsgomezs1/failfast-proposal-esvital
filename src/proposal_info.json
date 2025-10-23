@@ -8,7 +8,7 @@
     "key_capabilities": [
       "**Gestión de historia clínica**\n  - **Catálogo de tratamientos y productos**, incluyendo duración y recursos requeridos. \nConsulta y reserva **disponibilidad de médicos y equipos** en tiempo real. \n **Registro gráfico** de la evolución del Paciente",
       "**Gestión de clientes en el CRM** \n -Análisis de Origen del Cliente \n -Dashboard del comportamiento de Clientes",
-      "**Agente de IA que vende** \n  -Consulta disponibilidad (médicos y equipos) y **agenda citas automáticamente**, considerando turnos, tiempos de tratamientos y recursos necesarios. \n -Agenda citas y enviar recordatorios sincronizados con **Google Calendar**"
+      "**Agente IA -  ventas** \n  -Consulta disponibilidad (médicos y equipos) y **agenda citas automáticamente**, considerando turnos, tiempos de tratamientos y recursos necesarios. \n -Agenda citas y enviar recordatorios sincronizados con **Google Calendar**"
     ],
     "platforms": [
       {
@@ -62,8 +62,8 @@
       "title": "Parametrización de reglas de negocio",
       "intro": "Con los acuerdos previos, parametrizamos las reglas de negocio del CRM. Esta actividad la haremos en conjunto con el equipo de EsVital.",
       "description": [
-        "Parametrización del CRM e historia clínica",
-        "Modelado de historias clínicas e inventarios",
+        "Modelado del CRM e historia clínica",
+        "Modelado facturación e inventarios",
         "Desarrollo del agente de AI",
         "Reglas de agenda por profesional y recurso",
         "Prototipo navegable del CRM (embudo, ficha de paciente, mapa de tratamientos)",
@@ -152,9 +152,12 @@
       "features": [
         "Desarrollo de un agente de ventas adaptado al contexto de EsVital.",
         "Implementación de CRM para la gestión de clientes y oportunidades de venta.",
+        "Implementación de facturación electrónica y RIPS ",
+        "Implementación de Historia Clínica ",
         "Levantamiento del proceso y parametrización del sistema",
+        "Desarrollo de la estructura para migración de",
         "Capacitación y contextualización sobre AI y Meta.",
-        "Capacitación a usuarios finales sobre el uso de Fail Fast - AI CRM & ERP"
+        "Capacitación a usuarios finales sobre el uso de Fail Fast - AI CRM"
       ],
       "buttonText": "Contactar",
       "highlighted": true
