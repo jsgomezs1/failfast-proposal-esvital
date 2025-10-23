@@ -115,7 +115,12 @@
       "title": "Facturación Electrónica",
       "price": "220 COP",
       "period": "220 pesos por transacción",
-      "features": ["Facturación electrónica", "RIPS"],
+      "features": [
+        "Facturación electrónica",
+        "RIPS",
+        "*Inlcuidos sin costo 500 documentos mensuales ",
+        "Portal de Consulta Facturación"
+      ],
       "buttonText": "Comenzar",
       "highlighted": false
     },
