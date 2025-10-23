@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import casablanca from "@/assets/casablanca.png";
+import esvitalLogo from "@/assets/esvital.webp";
 
 import {
   Target,
@@ -125,7 +125,7 @@ const ClientIntroductionSection: React.FC<ClientIntroductionSectionProps> = ({
                 {/* Logo */}
                 <div className="p-8">
                   <img
-                    src={casablanca}
+                    src={esvitalLogo}
                     alt={`${proposalInfo.client_name} - Ambientes que inspiran`}
                   />
                 </div>
