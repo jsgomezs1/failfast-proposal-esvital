@@ -131,8 +131,7 @@
         "Inlcuye 500 documentos mensuales. ",
         "Inventarios - entradas, salidas",
         "Panel de control con KPIs de ventas",
-        "Notificaciones inteligentes y tareas automáticas",
-        ""
+        "Notificaciones inteligentes y tareas automáticas"
       ],
       "buttonText": "Comenzar",
       "highlighted": false
@@ -160,43 +159,43 @@
   "commercial_terms": [
     {
       "icon": "DollarSign",
-      "text": "Forma de pago: 20% al inicio del proyecto, 20% al terminar la fase de desarrollo de lógica de negocio, 30% al terminar la fase de Capacitaciones de Fail Fast, 30% contra entrega del proyecto. Suscripciones de usuarios facturadas mensualmente de manera anticipada."
+      "text": "Forma de pago: 20% al inicio del proyecto, 20% al finalizar la fase de desarrollo de la lógica de negocio, 30% al finalizar la fase de capacitaciones y 30% contra entrega final del proyecto. Las suscripciones de usuarios se facturan mensualmente de manera anticipada."
     },
     {
       "icon": "FileText",
-      "text": "Facturación: emisión en USD. Impuestos locales (IVA/retenciones) no incluidos; se aplican según normativa vigente."
+      "text": "Facturación: emisión en USD desde EE.UU. (Fail Fast Inc.) o en COP a través de Quality Software SAS (Colombia), según el acuerdo comercial. Impuestos locales (IVA/retenciones) no incluidos; se aplican conforme a la normativa vigente. Los servicios en la nube se encuentran exentos de IVA en Colombia de acuerdo con el artículo 476 del Estatuto Tributario."
     },
     {
       "icon": "Briefcase",
-      "text": "Alcance: el precio de proyecto cubre únicamente la implementación del CRM y ERP así como el agente de ventas por WhatsApp. Integraciones adicionales, migraciones y desarrollos a medida se cotizan por separado."
+      "text": "Alcance: el precio del proyecto cubre la implementación del CRM y ERP, así como la configuración del agente de ventas para WhatsApp. Cualquier integración adicional, migración de datos o desarrollo a la medida será objeto de una cotización independiente."
     },
     {
       "icon": "Clock",
-      "text": "Vigencia de la oferta: 15 días calendario a partir de la fecha de envío."
+      "text": "Vigencia de la oferta: esta propuesta tendrá una validez de 15 días calendario contados a partir de la fecha de envío."
     },
     {
       "icon": "Zap",
-      "text": "SLA y soporte: soporte estándar en horario hábil (L–V 8:00–17:00, GMT-5). Tiempo de primera respuesta: 2 horas hábiles."
+      "text": "SLA y soporte: Fail Fast ofrece soporte estándar en horario hábil (lunes a viernes de 8:00 a 17:00, GMT-5), con un tiempo de primera respuesta de 2 horas hábiles. Canales de soporte: correo electrónico y mesa de ayuda."
     },
     {
       "icon": "Users",
-      "text": "Capacitaciones: incluye onboarding inicial para la organización. Entrenamientos a la medida o sesiones adicionales se cotizan aparte."
+      "text": "Capacitaciones: incluye un programa de onboarding inicial para la organización. Entrenamientos personalizados, sesiones adicionales o talleres especializados se cotizarán de manera independiente."
     },
     {
       "icon": "Shield",
-      "text": "Propiedad y datos: la información del cliente es de su exclusiva propiedad. Los derechos de Fail Fast y desarrollos seguirán siendo propiedad de Fail Fast."
+      "text": "Propiedad y datos: toda la información y datos generados o suministrados por el cliente serán de su exclusiva propiedad. Los derechos sobre la plataforma, desarrollos tecnológicos y propiedad intelectual seguirán perteneciendo a Fail Fast."
     },
     {
       "icon": "Shield",
-      "text": "Confidencialidad: ambas partes se comprometen a la reserva de la información técnica y comercial compartida."
+      "text": "Confidencialidad: ambas partes se comprometen a mantener la confidencialidad de toda la información técnica, operativa y comercial compartida durante la ejecución del proyecto."
     },
     {
       "icon": "FileText",
-      "text": "Cambios y horas adicionales: solicitudes fuera de alcance se gestionan vía cambio controlado y se facturan según tarifa vigente."
+      "text": "Cambios y horas adicionales: cualquier solicitud fuera del alcance definido será gestionada a través de un proceso formal de control de cambios y facturada de acuerdo con la tarifa vigente."
     },
     {
       "icon": "FileText",
-      "text": "Cancelación: en caso de cancelación anticipada del proyecto, se facturará el trabajo ejecutado y compromisos adquiridos."
+      "text": "Cancelación: en caso de cancelación anticipada del proyecto, se facturará la totalidad del trabajo ejecutado y los compromisos contractuales adquiridos hasta la fecha."
     }
   ]
 }
