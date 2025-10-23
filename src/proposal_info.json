@@ -111,20 +111,6 @@
 
   "pricing_tiers": [
     {
-      "icon": "FileCheck2",
-      "title": "Facturación Electrónica",
-      "price": "220 COP",
-      "period": "220 pesos por transacción",
-      "features": [
-        "Facturación electrónica",
-        "RIPS",
-        "*Inlcuidos sin costo 500 documentos mensuales ",
-        "Portal de Consulta Facturación"
-      ],
-      "buttonText": "Comenzar",
-      "highlighted": false
-    },
-    {
       "icon": "Bot",
       "title": "Ejecuciones del Agente",
       "price": "$4.99",
@@ -141,10 +127,12 @@
       "features": [
         "CRM - Gestión centralizada de clientes y agenda, registro y seguimiento de oportunidades de venta",
         "Historia clínica - registro, catalogo de tratamientos, registro gráfico",
-        "Facturación electrónica, RIPS",
-        "Contabilidad, Inventarios",
+        "Facturación electrónica, RIPS, portal de facturación",
+        "Inlcuye 500 documentos mensuales. ",
+        "Inventarios - entradas, salidas",
         "Panel de control con KPIs de ventas",
-        "Notificaciones inteligentes y tareas automáticas"
+        "Notificaciones inteligentes y tareas automáticas",
+        ""
       ],
       "buttonText": "Comenzar",
       "highlighted": false
