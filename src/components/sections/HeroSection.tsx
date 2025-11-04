@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import failFastLogo from "@/assets/Logo-blanco.png";
-import casablanca from "@/assets/casablanca.png";
+import casablanca from "@/assets/hotel_casablanca.png";
 import { ArrowDown, ArrowRight } from "lucide-react";
 import proposalInfo from "@/proposal_info.json";  
 

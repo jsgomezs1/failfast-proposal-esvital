@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import casablanca from "@/assets/casablanca.png";
+import casablanca from "@/assets/hotel_casablanca.png";
 
 import {
   Target,

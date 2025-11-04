@@ -1,7 +1,23 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Package, BarChart3, Wallet, Brain, Network, Sparkles } from "lucide-react";
+import {
+  Package,
+  BarChart3,
+  Wallet,
+  User,
+  Brain,
+  Network,
+  Sparkles,
+  Smile,
+  Stethoscope,
+  Hotel,
+  Calendar,
+  DollarSign,
+  MessageCircle,
+  Users,
+  Box,
+} from "lucide-react";
 import Facebook from "@/assets/Facebook.webp";
 import Instagram from "@/assets/Instagram.png";
 import Whatsapp from "@/assets/whatsapp.webp";
@@ -15,12 +31,21 @@ const AboutFailFastSection: React.FC<AboutFailFastSectionProps> = ({
   sectionsRef,
   index,
 }) => {
+  // Define colores personalizados para alternar: Azul Profundo y Azul Cielo
+  const primaryColorClass = "text-blue-600"; // Tono azul profundo y sobrio
+  const secondaryColorClass = "text-sky-500"; // Tono azul cielo
+  
+  const primaryBgClass = "from-blue-600/10 to-blue-500/10";
+  const primaryHoverBgClass = "group-hover:from-blue-600/20 group-hover:to-blue-500/20";
+  const secondaryBgClass = "from-sky-500/10 to-sky-400/10";
+  const secondaryHoverBgClass = "group-hover:from-sky-500/20 group-hover:to-sky-400/20";
+
   return (
     <section
       ref={(el) => (sectionsRef.current[index] = el)}
       className="relative section-padding opacity-0 transition-opacity duration-700 bg-gradient-to-b from-accent/20 via-white to-accent/30 dark:from-accent/10 dark:via-background dark:to-accent/10 overflow-hidden"
     >
-      {/* Floating Gradient Orbs */}
+      {/* Floating Gradient Orbs (Mantienen el esquema de color general) */}
       <div
         className="absolute top-10 left-[5%] w-[500px] h-[500px] rounded-full bg-gradient-to-br from-primary/15 to-transparent blur-3xl animate-pulse"
         style={{ animationDuration: "4s" }}
@@ -65,126 +90,183 @@ const AboutFailFastSection: React.FC<AboutFailFastSectionProps> = ({
           </h1>
         </div>
 
-        {/* CRITICAL: Differentiator Callout Banner */}
-        <div
-          className="max-w-4xl mx-auto mb-16 animate-fade-in"
-          style={{ animationDelay: "0.2s" }}
-        >
-          <div className="relative group">
-            {/* Glowing background */}
-            <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary-light to-primary rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
-
-            {/* Main callout card */}
-          </div>
-        </div>
-
         {/* Enhanced Feature Grid */}
         <div className="grid md:grid-cols-3 gap-8 lg:gap-8 max-w-6xl mx-auto mb-16">
-          {/* Card 1: Productos */}
-          <div className="animate-fade-in" style={{ animationDelay: "0.4s" }}>
-            <Card className="relative p-8 md:p-10 lg:p-8 h-full backdrop-blur-sm bg-white/80 dark:bg-background/80 border border-primary/20 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 overflow-hidden group">
+          {/* TOP: Card grande de Agentes (ocupa las 3 columnas) - Color Principal (Azul Profundo) */}
+          <div
+            className="md:col-span-3 animate-fade-in"
+            style={{ animationDelay: "0.3s" }}
+          >
+            <Card className="relative p-8 md:p-10 lg:p-8 h-full backdrop-blur-sm bg-white/80 dark:bg-background/80 border border-primary/20 shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group">
               {/* Badge number */}
-              <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-primary-light/20 flex items-center justify-center">
-                <span className="text-xl font-black text-primary">01</span>
+              <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br from-blue-600/20 to-blue-500/20 flex items-center justify-center">
+                <span className="text-xl font-black text-blue-700">00</span>
               </div>
 
               {/* Icon */}
               <div className="mb-6">
-                <div className="inline-flex p-4 rounded-2xl bg-gradient-to-br from-primary/10 to-primary-light/10 group-hover:from-primary/20 group-hover:to-primary-light/20 transition-colors duration-300">
-                  <Package className="w-14 h-14 text-primary" strokeWidth={2} />
+                <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${primaryBgClass} ${primaryHoverBgClass} transition-colors duration-300`}>
+                  <Brain className={`w-14 h-14 ${primaryColorClass}`} strokeWidth={2} />
                 </div>
               </div>
 
               {/* Content */}
               <div className="relative space-y-4">
                 <h3 className="text-2xl md:text-3xl lg:text-2xl font-bold text-foreground">
-                  Productos
+                  Agente de Ventas IA
                 </h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Nuestros agentes conocen cada detalle de tus productos:
+                  Implementamos un agente de ventas con inteligencia artificial (IA) que potenciará la comercialización del Hotel Casablanca. Este agente conoce el detalle del contexto del hotel:
                   <span className="text-foreground font-semibold">
                     {" "}
-                    especificaciones, precios, disponibilidad y características
+                    productos, planes, precios, disponibilidad, base de datos de clientes e historial de compras
                   </span>
-                  . Toda la información de tu catálogo vive en Fail Fast,
-                  permitiendo respuestas precisas y contextualizadas.
+                  . Es capaz de realizar cierres de ventas, gestionar reservas y enviar links de pago de forma autónoma.
                 </p>
               </div>
             </Card>
           </div>
 
-          {/* Card 2: Inventario */}
+          {/* Card 2: Productos y Precios (Cátalogo) - Color Secundario (Azul Cielo) */}
           <div className="animate-fade-in" style={{ animationDelay: "0.5s" }}>
             <Card className="relative p-8 md:p-10 lg:p-8 h-full backdrop-blur-sm bg-white/80 dark:bg-background/80 border border-primary/20 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 overflow-hidden group">
               {/* Badge number */}
-              <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-primary-light/20 flex items-center justify-center">
-                <span className="text-xl font-black text-primary">02</span>
+              <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br from-sky-500/20 to-sky-400/20 flex items-center justify-center">
+                <span className="text-xl font-black text-sky-600">02</span>
               </div>
 
               {/* Decorative corner */}
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-gradient-to-br from-primary-light/10 to-transparent group-hover:scale-150 transition-transform duration-700" />
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-gradient-to-br from-sky-500/10 to-transparent group-hover:scale-150 transition-transform duration-700" />
 
               {/* Icon */}
-              <div className="mb-6">
-                <div className="inline-flex p-4 rounded-2xl bg-gradient-to-br from-primary/10 to-primary-light/10 group-hover:from-primary/20 group-hover:to-primary-light/20 transition-colors duration-300">
-                  <BarChart3
-                    className="w-14 h-14 text-primary"
-                    strokeWidth={2}
-                  />
+              <div className={`mb-6`}>
+                <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${secondaryBgClass} ${secondaryHoverBgClass} transition-colors duration-300`}>
+                  <Box className={`w-14 h-14 ${secondaryColorClass}`} strokeWidth={2} />
                 </div>
               </div>
 
               {/* Content */}
               <div className="relative space-y-4">
                 <h3 className="text-2xl md:text-3xl lg:text-2xl font-bold text-foreground">
-                  Inventario
+                  Productos y Precios
                 </h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Los agentes tienen acceso completo a tu inventario en{" "}
+                  El agente conoce todo el
                   <span className="text-foreground font-semibold">
-                    tiempo real: stock disponible, movimientos, proveedores y
-                    tendencias
+                    {" "}
+                    catálogo de servicios, planes, tipos de habitaciones y salones, junto con sus precios actualizados y ofertas vigentes
                   </span>
-                  . Toda esta información vive en Fail Fast, garantizando
-                  decisiones informadas.
+                  . Responde con precisión sin errores humanos.
                 </p>
               </div>
             </Card>
           </div>
 
-          {/* Card 3: Cartera */}
+          {/* Card 3: Clientes y CRM (Base de Datos) - Color Principal (Azul Profundo) */}
           <div className="animate-fade-in" style={{ animationDelay: "0.6s" }}>
             <Card className="relative p-8 md:p-10 lg:p-8 h-full backdrop-blur-sm bg-white/80 dark:bg-background/80 border border-primary/20 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 overflow-hidden group">
               {/* Badge number */}
-              <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-primary-light/20 flex items-center justify-center">
-                <span className="text-xl font-black text-primary">03</span>
+              <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br from-blue-600/20 to-blue-500/20 flex items-center justify-center">
+                <span className="text-xl font-black text-blue-700">03</span>
               </div>
+              
+              {/* Decorative corner */}
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-gradient-to-br from-blue-500/10 to-transparent group-hover:scale-150 transition-transform duration-700" />
 
               {/* Icon */}
               <div className="mb-6">
-                <div className="inline-flex p-4 rounded-2xl bg-gradient-to-br from-primary/10 to-primary-light/10 group-hover:from-primary/20 group-hover:to-primary-light/20 transition-colors duration-300">
-                  <Wallet className="w-14 h-14 text-primary" strokeWidth={2} />
+                <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${primaryBgClass} ${primaryHoverBgClass} transition-colors duration-300`}>
+                  <Users className={`w-14 h-14 ${primaryColorClass}`} strokeWidth={2} />
                 </div>
               </div>
 
               {/* Content */}
               <div className="relative space-y-4">
                 <h3 className="text-2xl md:text-3xl lg:text-2xl font-bold text-foreground">
-                  Cartera
+                  Base de Datos de Clientes
                 </h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Nuestros agentes conocen el estado completo de tu cartera:
+                  Acceso a la
                   <span className="text-foreground font-semibold">
                     {" "}
-                    clientes, cuentas por pagar, comportamiento de pago y
-                    oportunidades.
+                    base de datos de clientes, historial de compras y preferencias anteriores
                   </span>
-                  Toda esta información financiera vive en Fail Fast,
-                  optimizando la gestión.
+                  . Esto permite una atención personalizada y recomendaciones de venta cruzada.
                 </p>
               </div>
             </Card>
           </div>
+
+          {/* Card 4: Integración ERP Zeus y Facturación - Color Secundario (Azul Cielo) */}
+          <div className="animate-fade-in" style={{ animationDelay: "0.7s" }}>
+            <Card className="relative p-8 md:p-10 lg:p-8 h-full backdrop-blur-sm bg-white/80 dark:bg-background/80 border border-primary/20 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 overflow-hidden group">
+              {/* Badge number */}
+              <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br from-sky-500/20 to-sky-400/20 flex items-center justify-center">
+                <span className="text-xl font-black text-sky-600">04</span>
+              </div>
+
+              {/* Decorative corner */}
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-gradient-to-br from-sky-500/10 to-transparent group-hover:scale-150 transition-transform duration-700" />
+
+              {/* Icon */}
+              <div className="mb-6">
+                 <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${secondaryBgClass} ${secondaryHoverBgClass} transition-colors duration-300`}>
+                  <Network className={`w-14 h-14 ${secondaryColorClass}`} strokeWidth={2} />
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="relative space-y-4">
+                <h3 className="text-2xl md:text-3xl lg:text-2xl font-bold text-foreground">
+                  Integración ERP Zeus y Facturación
+                </h3>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                  Conectividad total con el
+                  <span className="text-foreground font-semibold">
+                    {" "}
+                    sistema Zeus ERP existente
+                  </span>
+                  . El agente consulta disponibilidad, registra reservas y genera órdenes de facturación en tiempo real.
+                </p>
+              </div>
+            </Card>
+          </div>
+          
+          {/* Card 5: Dashboard Estratégico - Color Principal (Azul Profundo) */}
+          <div className="animate-fade-in" style={{ animationDelay: "0.8s" }}>
+            <Card className="relative p-8 md:p-10 lg:p-8 h-full backdrop-blur-sm bg-white/80 dark:bg-background/80 border border-primary/20 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 overflow-hidden group">
+              {/* Badge number */}
+              <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br from-blue-600/20 to-blue-500/20 flex items-center justify-center">
+                <span className="text-xl font-black text-blue-700">05</span>
+              </div>
+
+              {/* Decorative corner */}
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-gradient-to-br from-blue-500/10 to-transparent group-hover:scale-150 transition-transform duration-700" />
+
+              {/* Icon */}
+              <div className="mb-6">
+                <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${primaryBgClass} ${primaryHoverBgClass} transition-colors duration-300`}>
+                  <BarChart3 className={`w-14 h-14 ${primaryColorClass}`} strokeWidth={2} />
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="relative space-y-4">
+                <h3 className="text-2xl md:text-3xl lg:text-2xl font-bold text-foreground">
+                  Dashboard Estratégico
+                </h3>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                  Generación de un
+                  <span className="text-foreground font-semibold">
+                    {" "}
+                    Dashboard para la toma de decisiones estratégicas
+                  </span>
+                  . Analiza datos de ventas, rendimiento del agente y comportamiento del cliente para optimizar la oferta.
+                </p>
+              </div>
+            </Card>
+          </div>
+
         </div>
       </div>
     </section>

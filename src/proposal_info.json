@@ -1,30 +1,22 @@
 {
-  "client_name": "Casablanca",
-  "client_logo": "@/assets/casablanca.png",
-  "client_description": "Casablanca representa una generación de empresas establecidas en el mercado que internalizaron que **solo aquellos que adopten la IA** serán los que sobrevivirán a esta nueva era. Con más de **43 años en el mercado** y presencia en **13 países**, Casablanca entiende que combinar su profundo conocimiento del mercado con la optimización de procesos a través de la inteligencia artificial es la clave para liderar el futuro.",
+  "client_name": "Hotel Casablanca",
+  "client_logo": "@/assets/hotel_casablanca.png",
+  "client_description": "El Hotel Casablanca Cúcuta es un establecimiento hotelero icónico con más de seis décadas de historia y servicio ininterrumpido en la región. Se ha consolidado como un referente del sector turístico y comercial de la ciudad gracias a su ubicación estratégica en el corazón comercial y financiero, ofreciendo fácil acceso a puntos clave como la Gobernación de Norte de Santander, centros comerciales y principales atractivos turísticos, lo cual es ideal tanto para huéspedes de negocios como de placer.\n\nEl hotel dispone de una infraestructura versátil que incluye 120 habitaciones modernas y confortables, además de 13 salones para eventos con capacidad para adaptarse a diversas necesidades corporativas y sociales. Sus servicios integrales abarcan dos restaurantes (Cabá y Bar 360), piscina, gimnasio, servicios de spa y conexión WiFi gratuita. El sello distintivo del Casablanca es su calidez humana y profesionalismo en el servicio, combinando la solidez de su legado histórico con una constante adaptación a las comodidades modernas para garantizar una experiencia completa y satisfactoria.",
   "objective": {
-    "description": "Implementar un agente de IA para las ventas a traves de:",
+    "description": "Desarrollar un asistente de de IA para las ventas a traves de:",
     "platforms": [
       {
         "name": "WhatsApp",
         "icon": "MessageCircle",
         "color": "green"
-      },
-      {
-        "name": "Facebook",
-        "icon": "Facebook",
-        "color": "blue"
-      },
-      {
-        "name": "Instagram",
-        "icon": "Instagram",
-        "color": "pink"
       }
     ],
     "key_capabilities": [
       "Recomienda productos y clasifica clientes",
       "Registra conversaciones y mantiene un historial completo",
-      "Incluye **intervención humana** en cierres de ventas",
+      "Es capaz de realizar **cierres de ventas** y enviar link de pago",
+      "Consulta disponibilidad de habitaciones y salones",
+      "Realiza reservaciones de habitaciones y salones",
       "Genera un Dashboard para la toma de **decisiones estratégicas**"
     ]
   },
@@ -94,7 +86,7 @@
       "icon": "Rocket",
       "title": "Agente de Ventas",
       "price": "$835",
-      "period": "USD mensual",
+      "period": "USD mes",
       "features": [
         "Desarrollo de un agente de ventas adaptado al contexto de Casa Blanca.",
         "Levantamiento del proceso de automatización del agente",
