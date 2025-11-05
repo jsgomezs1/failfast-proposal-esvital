@@ -132,8 +132,9 @@ const ClientIntroductionSection: React.FC<ClientIntroductionSectionProps> = ({
 
                 {/* Description */}
                 <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed">
-                  <p>{parseFormattedText(proposalInfo.client_description)}</p>
-              
+                  {proposalInfo.client_description.split('\n\n').map((paragraph, index) => (
+                    <p key={index}>{parseFormattedText(paragraph.trim())}</p>
+                  ))}
                 </div>
               </div>
               

@@ -1,22 +1,33 @@
 {
   "client_name": "Hotel Casablanca",
   "client_logo": "@/assets/hotel_casablanca.png",
-  "client_description": "El Hotel Casablanca Cúcuta es un establecimiento hotelero icónico con más de seis décadas de historia y servicio ininterrumpido en la región. Se ha consolidado como un referente del sector turístico y comercial de la ciudad gracias a su ubicación estratégica en el corazón comercial y financiero, ofreciendo fácil acceso a puntos clave como la Gobernación de Norte de Santander, centros comerciales y principales atractivos turísticos, lo cual es ideal tanto para huéspedes de negocios como de placer.\n\nEl hotel dispone de una infraestructura versátil que incluye 120 habitaciones modernas y confortables, además de 13 salones para eventos con capacidad para adaptarse a diversas necesidades corporativas y sociales. Sus servicios integrales abarcan dos restaurantes (Cabá y Bar 360), piscina, gimnasio, servicios de spa y conexión WiFi gratuita. El sello distintivo del Casablanca es su calidez humana y profesionalismo en el servicio, combinando la solidez de su legado histórico con una constante adaptación a las comodidades modernas para garantizar una experiencia completa y satisfactoria.",
+  "client_description": "El Hotel Casablanca Cúcuta es un establecimiento hotelero icónico con más de seis décadas de historia y servicio ininterrumpido en la región.\n\nSe ha consolidado como un referente del sector turístico y comercial de la ciudad gracias a su ubicación estratégica en el corazón comercial y financiero, ofreciendo fácil acceso a puntos clave como la Gobernación de Norte de Santander, centros comerciales y principales atractivos turísticos, lo cual es ideal tanto para huéspedes de negocios como de placer.\n\nEl hotel dispone de una infraestructura versátil que incluye 120 habitaciones modernas y confortables, además de 13 salones para eventos con capacidad para adaptarse a diversas necesidades corporativas y sociales. Sus servicios integrales abarcan dos restaurantes (Cabá y Bar 360), piscina, gimnasio, servicios de spa y conexión WiFi gratuita.",
   "objective": {
-    "description": "Desarrollar un asistente de de IA para las ventas a traves de:",
+    "description": "Desarrollar un asistente de de IA para las ventas de las tres líneas de negocio (Hotel, Restaurante y Eventos) a traves de:",
     "platforms": [
       {
         "name": "WhatsApp",
         "icon": "MessageCircle",
         "color": "green"
+      },
+      {
+        "name": "Instagram",
+        "icon": "MessageCircle",
+        "color": "yellow"
+      },
+      {
+        "name": "Facebook",
+        "icon": "MessageCircle",
+        "color": "blue"
       }
     ],
     "key_capabilities": [
-      "Recomienda productos y clasifica clientes",
-      "Registra conversaciones y mantiene un historial completo",
-      "Es capaz de realizar **cierres de ventas** y enviar link de pago",
+      "Recomienda productos y es capaz de generar una reserva",
       "Consulta disponibilidad de habitaciones y salones",
       "Realiza reservaciones de habitaciones y salones",
+      "Registra historial de interacciones y las clasifica",
+      "Permite hacer seguimiento de leads y clientes",
+      "Es capaz de realizar **cierres de ventas** para (Hotel y Restaurante)",
       "Genera un Dashboard para la toma de **decisiones estratégicas**"
     ]
   },
@@ -85,18 +96,19 @@
     {
       "icon": "Rocket",
       "title": "Agente de Ventas",
-      "price": "$960",
+      "price": "$1167",
       "period": "USD mes",
       "features": [
         "Desarrollo de un agente orquestador de ventas adaptado al contexto de hotel casa blanca. ",
-        "  • Desarrollo del agente para restaurante ",
-        "  • Desarrollo del agente para reserva de hotel ",
-        "  • Desarrollo del agente para eventos ",
+        "  • Agente para restaurante ",
+        "  • Agente para reserva de hotel ",
+        "  • Agente para eventos ",
+        "  • Interacción con humano en momentos clave",
+        "Tres usuarios en la plataforma Fail Fast - CRM & Agentes",
+        "Automatización de interacciones comerciales",
         "Levantamiento del proceso de automatización del agente",
         "Capacitación y contextualizacion sobre AI y Meta.",
         "Acompañamiento de un mes despues del lanzamiento del agente de ventas optimizando su desempeño",
-        "Dos usuarios en la plataforma Fail Fast",
-        "Automatización de interacciones comerciales",
         "Panel de control con KPIs de ventas",
         "Notificaciones inteligentes y tareas automáticas",
         "2500 ejecuciones del agente",

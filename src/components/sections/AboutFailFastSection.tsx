@@ -100,7 +100,7 @@ const AboutFailFastSection: React.FC<AboutFailFastSectionProps> = ({
             <Card className="relative p-8 md:p-10 lg:p-8 h-full backdrop-blur-sm bg-white/80 dark:bg-background/80 border border-primary/20 shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group">
               {/* Badge number */}
               <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br from-blue-600/20 to-blue-500/20 flex items-center justify-center">
-                <span className="text-xl font-black text-blue-700">00</span>
+                <span className="text-xl font-black text-blue-700">01</span>
               </div>
 
               {/* Icon */}
@@ -156,7 +156,43 @@ const AboutFailFastSection: React.FC<AboutFailFastSectionProps> = ({
                     {" "}
                     catálogo de servicios, planes, tipos de habitaciones y salones, junto con sus precios actualizados y ofertas vigentes
                   </span>
-                  . Responde con precisión sin errores humanos.
+                  .
+                </p>
+              </div>
+            </Card>
+          </div>
+
+
+          {/* Card 2: Productos y Precios (Cátalogo) - Color Secundario (Azul Cielo) */}
+          <div className="animate-fade-in" style={{ animationDelay: "0.5s" }}>
+            <Card className="relative p-8 md:p-10 lg:p-8 h-full backdrop-blur-sm bg-white/80 dark:bg-background/80 border border-primary/20 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 overflow-hidden group">
+              {/* Badge number */}
+              <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br from-sky-500/20 to-sky-400/20 flex items-center justify-center">
+                <span className="text-xl font-black text-sky-600">03</span>
+              </div>
+
+              {/* Decorative corner */}
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-gradient-to-br from-sky-500/10 to-transparent group-hover:scale-150 transition-transform duration-700" />
+
+              {/* Icon */}
+              <div className={`mb-6`}>
+                <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${secondaryBgClass} ${secondaryHoverBgClass} transition-colors duration-300`}>
+                  <Box className={`w-14 h-14 ${secondaryColorClass}`} strokeWidth={2} />
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="relative space-y-4">
+                <h3 className="text-2xl md:text-3xl lg:text-2xl font-bold text-foreground">
+                  Interacción del Agente con el Cliente
+                </h3>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                  Clasificaión de las interacciones del agente con el cliente y el historial de interacciones.
+                  <span className="text-foreground font-semibold">
+                    {" "}
+                    Activación de seguimiento
+                  </span>
+                  con base en la clasificación de las interacciones.
                 </p>
               </div>
             </Card>
@@ -167,7 +203,7 @@ const AboutFailFastSection: React.FC<AboutFailFastSectionProps> = ({
             <Card className="relative p-8 md:p-10 lg:p-8 h-full backdrop-blur-sm bg-white/80 dark:bg-background/80 border border-primary/20 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 overflow-hidden group">
               {/* Badge number */}
               <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br from-blue-600/20 to-blue-500/20 flex items-center justify-center">
-                <span className="text-xl font-black text-blue-700">03</span>
+                <span className="text-xl font-black text-blue-700">04</span>
               </div>
               
               {/* Decorative corner */}
@@ -183,15 +219,20 @@ const AboutFailFastSection: React.FC<AboutFailFastSectionProps> = ({
               {/* Content */}
               <div className="relative space-y-4">
                 <h3 className="text-2xl md:text-3xl lg:text-2xl font-bold text-foreground">
-                  Base de Datos de Clientes
+                  Visualización de Clientes y CRM
                 </h3>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                   Acceso a la
                   <span className="text-foreground font-semibold">
                     {" "}
-                    base de datos de clientes, historial de compras y preferencias anteriores
+                    base de datos de clientes, historial de compras y preferencias
                   </span>
-                  . Esto permite una atención personalizada y recomendaciones de venta cruzada.
+                  . Esto permite una atención personalizada y recomendaciones de venta cruzada. Además, permite hacer 
+                  <span className="text-foreground font-semibold">
+                    {" "}
+                    seguimiento de leads y clientes
+                  </span>
+                  .
                 </p>
               </div>
             </Card>
@@ -202,7 +243,7 @@ const AboutFailFastSection: React.FC<AboutFailFastSectionProps> = ({
             <Card className="relative p-8 md:p-10 lg:p-8 h-full backdrop-blur-sm bg-white/80 dark:bg-background/80 border border-primary/20 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 overflow-hidden group">
               {/* Badge number */}
               <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br from-sky-500/20 to-sky-400/20 flex items-center justify-center">
-                <span className="text-xl font-black text-sky-600">04</span>
+                <span className="text-xl font-black text-sky-600">05</span>
               </div>
 
               {/* Decorative corner */}
@@ -237,7 +278,7 @@ const AboutFailFastSection: React.FC<AboutFailFastSectionProps> = ({
             <Card className="relative p-8 md:p-10 lg:p-8 h-full backdrop-blur-sm bg-white/80 dark:bg-background/80 border border-primary/20 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 overflow-hidden group">
               {/* Badge number */}
               <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br from-blue-600/20 to-blue-500/20 flex items-center justify-center">
-                <span className="text-xl font-black text-blue-700">05</span>
+                <span className="text-xl font-black text-blue-700">06</span>
               </div>
 
               {/* Decorative corner */}
