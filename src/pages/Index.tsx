@@ -10,6 +10,7 @@ import ClosingSection from "@/components/sections/ClosingSection";
 import { SectionNavigation } from "@/components/ui/section-navigation";
 const Index = () => {
   const sectionsRef = useRef<(HTMLElement | null)[]>([]);
+  //hola
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
