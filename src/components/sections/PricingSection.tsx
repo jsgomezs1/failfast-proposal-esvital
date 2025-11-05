@@ -88,7 +88,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({
       <div className="container-custom relative z-10">
         {/* Header Section */}
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <h2 className="mb-5 text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
+          <h2 className="mb-5 text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
             Esquema de Precios
           </h2>
         </div>
@@ -108,17 +108,17 @@ const PricingSection: React.FC<PricingSectionProps> = ({
                 {/* Card */}
                 <Card className="h-full transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border-primary/80">
                   <CardHeader className="text-center pt-11 pb-3">
-                    <CardTitle className="text-xl font-bold mb-2">
+                    <CardTitle className="text-2xl font-bold mb-2">
                       {tier.title}
                     </CardTitle>
 
                     <div className="mt-3">
                       <div className="flex items-baseline justify-center gap-2">
-                        <span className="text-4xl font-bold text-foreground">
+                        <span className="text-5xl font-bold text-foreground">
                           {tier.price}
                         </span>
                       </div>
-                      <p className="text-xs text-muted-foreground mt-1.5">
+                      <p className="text-sm text-muted-foreground mt-1.5">
                         {tier.period}
                       </p>
                     </div>
@@ -127,14 +127,20 @@ const PricingSection: React.FC<PricingSectionProps> = ({
                   <CardContent className="space-y-3">
                     {/* Features List */}
                     <ul className="space-y-2">
-                      {tier.features.map((feature, featureIdx) => (
-                        <li key={featureIdx} className="flex items-start gap-3">
-                          <Check className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                          <span className="text-xs text-muted-foreground">
-                            {feature}
-                          </span>
-                        </li>
-                      ))}
+                      {tier.features.map((feature, featureIdx) => {
+                        const isSubItem = feature.trimStart() !== feature;
+                        return (
+                          <li 
+                            key={featureIdx} 
+                            className={`flex items-start gap-3 ${isSubItem ? 'pl-6' : ''}`}
+                          >
+                            <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                            <span className="text-sm text-muted-foreground">
+                              {feature}
+                            </span>
+                          </li>
+                        );
+                      })}
                     </ul>
                   </CardContent>
                 </Card>
@@ -153,7 +159,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({
             </DialogTrigger>
             <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
               <DialogHeader>
-                <DialogTitle className="text-xl font-bold flex items-center gap-2">
+                <DialogTitle className="text-3xl font-bold flex items-center gap-2">
                   Condiciones Comerciales
                 </DialogTitle>
               </DialogHeader>
@@ -166,8 +172,8 @@ const PricingSection: React.FC<PricingSectionProps> = ({
                         key={i}
                         className="flex items-start gap-3 p-3 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors"
                       >
-                        <Icon className="w-3.5 h-3.5 text-primary mt-1 flex-shrink-0" />
-                        <span className="text-xs text-muted-foreground leading-relaxed">
+                        <Icon className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                        <span className="text-base text-muted-foreground leading-relaxed">
                           {term.text}
                         </span>
                       </li>
